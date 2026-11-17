@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Stack Overflow Business</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background-color: #ffffff;
+      color: #1c1b1b;
+      line-height: 1.5;
+    }
+
+    /* ================= NAVBAR ================= */
+    header {
+      background-color: #1f1d1d;
+      color: #ffffff;
+      padding: 16px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #2e2b2b;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .nav-left, .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    .so-icon {
+      width: 26px;
+      height: 30px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .so-bucket {
+      width: 22px;
+      height: 10px;
+      border: 2.5px solid #bcbcbc;
+      border-top: none;
+    }
+
+    .so-bar {
+      width: 14px;
+      height: 2.5px;
+      background-color: #f48024;
+      margin-bottom: 2px;
+    }
+    .so-bar:nth-child(1) { transform: rotate(22deg) translate(2px, -3px); }
+    .so-bar:nth-child(2) { transform: rotate(14deg) translate(1px, -2px); }
+    .so-bar:nth-child(3) { transform: rotate(7deg) translate(0px, -1px); }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+
+    .brand-text strong {
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    .brand-text span {
+      font-size: 10px;
+      color: #a8a5a5;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 22px;
+    }
+
+    .nav-links a, .nav-right a.text-link {
+      color: #d6d3d3;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover, .nav-right a.text-link:hover {
+      color: #ffffff;
+    }
+
+    .btn-pill {
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .btn-pill:hover {
+      opacity: 0.9;
+    }
+
+    .btn-blue {
+      background-color: #5b7cfa;
+      color: #ffffff;
+    }
+
+    .btn-orange {
+      background-color: #f48024;
+      color: #ffffff;
+    }
+
+    /* ================= HERO SECTION ================= */
+    .hero {
+      background-color: #1f1d1d;
+      color: #ffffff;
+      padding: 80px 40px 100px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Subtle dark watermark blocks in background */
+    .hero::before {
+      content: "";
+      position: absolute;
+      bottom: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 650px;
+      height: 280px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+      clip-path: polygon(10% 100%, 0% 25%, 18% 20%, 28% 75%, 38% 10%, 58% 10%, 58% 75%, 75% 15%, 95% 25%, 82% 100%);
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-left h1 {
+      font-size: 52px;
+      font-weight: 800;
+      line-height: 1.08;
+      letter-spacing: -1px;
+      margin-bottom: 20px;
+    }
+
+    .hero-left p {
+      color: #c9c6c6;
+      font-size: 16px;
+      max-width: 380px;
+      margin-bottom: 28px;
+    }
+
+    .btn-white {
+      display: inline-block;
+      background-color: #ffffff;
+      color: #1f1d1d;
+      padding: 10px 20px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .btn-white:hover {
+      background-color: #e6e4e4;
+    }
+
+    /* Staggered Stacked Stat Bars */
+    .stats-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .stat-row {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .stat-row:nth-child(2) { margin-left: 36px; }
+    .stat-row:nth-child(3) { margin-left: -14px; }
+    .stat-row:nth-child(4) { margin-left: 14px; }
+
+    .stat-pill {
+      display: inline-flex;
+      align-items: stretch;
+      background-color: #ffffff;
+      color: #1f1d1d;
+      border-radius: 4px;
+      overflow: hidden;
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: -0.8px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    }
+
+    .stat-num {
+      padding: 6px 16px;
+      font-family: "Courier New", Courier, monospace;
+      font-weight: 900;
+    }
+
+    .stat-word {
+      padding: 6px 18px;
+      background-color: #ffffff;
+    }
+
+    .bg-green { background-color: #a6d63b; }
+    .bg-yellow { background-color: #f9d835; }
+    .bg-purple { background-color: #c2b2ff; }
+    .bg-orange { background-color: #f48024; }
+
+    .stat-caption {
+      font-size: 13px;
+      color: #a8a5a5;
+      max-width: 170px;
+      line-height: 1.3;
+    }
+
+    /* ================= LOGO STRIP ================= */
+    .logo-strip {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ececec;
+      padding: 24px 40px;
+    }
+
+    .logo-list {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      color: #232629;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    .logo-item {
+      opacity: 0.85;
+      letter-spacing: -0.3px;
+    }
+
+    /* ================= CONTENT SECTION ================= */
+    .content-section {
+      max-width: 1120px;
+      margin: 60px auto;
+      padding: 0 40px;
+    }
+
+    .content-section h2 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #1c1b1b;
+      max-width: 480px;
+      line-height: 1.25;
+      margin-bottom: 32px;
+    }
+
+    .feature-box {
+      border: 1px solid #e3e6e8;
+      border-radius: 12px;
+      padding: 32px;
+      background-color: #f8f9f9;
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .metric-highlight {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .metric-badge {
+      background-color: #1f1d1d;
+      color: #ffffff;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 24px;
+      font-weight: 800;
+      padding: 10px 14px;
+      border-radius: 4px;
+    }
+
+    .metric-highlight p {
+      font-size: 14px;
+      font-weight: 600;
+      color: #3b4045;
+    }
+
+    .mock-ui {
+      background-color: #ffffff;
+      border: 1px solid #d6d9dc;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .mock-ui-header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #ececec;
+      padding-bottom: 10px;
+      margin-bottom: 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #525960;
+    }
+
+    .mock-ui-body {
+      font-size: 14px;
+      color: #3b4045;
+    }
+
+    /* ================= COOKIE BANNER ================= */
+    .cookie-card {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 310px;
+      background-color: #ffffff;
+      border: 1px solid #d6d9dc;
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.14);
+      z-index: 200;
+      font-size: 12px;
+      color: #3b4045;
+    }
+
+    .cookie-card p {
+      margin-bottom: 14px;
+      line-height: 1.45;
+    }
+
+    .cookie-card a {
+      color: #0074cc;
+      text-decoration: underline;
+    }
+
+    .cookie-actions {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .cookie-btn {
+      background-color: #1f1d1d;
+      color: #ffffff;
+      border: none;
+      border-radius: 999px;
+      padding: 7px 14px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .cookie-btn:hover {
+      background-color: #3b3838;
+    }
+
+    .cookie-settings {
+      display: inline-block;
+      font-weight: 700;
+      color: #1f1d1d;
+      text-decoration: none;
+      font-size: 12px;
+    }
+
+    /* ================= FOOTER ================= */
+    footer {
+      background-color: #1f1d1d;
+      color: #a8a5a5;
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      margin-top: 60px;
+    }
+
+    /* ================= RESPONSIVE ================= */
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .stat-row:nth-child(n) {
+        margin-left: 0;
+      }
+      .feature-box {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP NAVIGATION -->
+  <header>
+    <div class="nav-left">
+      <a href="index.html" class="brand">
+        <div class="so-icon">
+          <div class="so-bar"></div>
+          <div class="so-bar"></div>
+          <div class="so-bar"></div>
+          <div class="so-bucket"></div>
+        </div>
+        <div class="brand-text">
+          <strong>Stack Overflow</strong>
+          <span>Business</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" style="color: #ffffff;">About Us</a>
+        <a href="#">Stack Internal</a>
+        <a href="#">Stack Data Licensing</a>
+        <a href="#">Stack Ads</a>
+      </nav>
+    </div>
+
+    <div class="nav-right">
+      <a href="#" class="text-link">Partnerships</a>
+      <a href="#" class="text-link">Resources &#9662;</a>
+      <a href="login.html" class="btn-pill btn-blue">Get started</a>
+      <a href="#" class="btn-pill btn-orange">Talk to an expert</a>
+    </div>
+  </header>
+
+  <!-- DARK HERO SECTION -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <h1>We know<br>knowledge</h1>
+        <p>Helping communities of people and AI get trusted knowledge since 2008. We're building the products that put it to work.</p>
+        <a href="#" class="btn-white">See Stack Internal</a>
+      </div>
+
+      <div class="stats-stack">
+        <div class="stat-row">
+          <div class="stat-pill">
+            <span class="stat-num bg-green">18</span>
+            <span class="stat-word">years</span>
+          </div>
+          <span class="stat-caption">of trusted and high-quality knowledge</span>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat-pill">
+            <span class="stat-num bg-yellow">83</span>
+            <span class="stat-word">million</span>
+          </div>
+          <span class="stat-caption">questions and answers (and counting)</span>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat-pill">
+            <span class="stat-num bg-purple">21</span>
+            <span class="stat-word">seconds</span>
+          </div>
+          <span class="stat-caption">between new questions, on average</span>
+        </div>
+
+        <div class="stat-row">
+          <div class="stat-pill">
+            <span class="stat-num bg-orange">113</span>
+            <span class="stat-word">billion</span>
+          </div>
+          <span class="stat-caption">times knowledge has been reused</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPANY LOGO STRIP -->
+  <section class="logo-strip">
+    <div class="logo-list">
+      <span class="logo-item">verizon media</span>
+      <span class="logo-item" style="font-size: 20px;">box</span>
+      <span class="logo-item">INTERCOM</span>
+      <span class="logo-item">OpenAI</span>
+      <span class="logo-item">wisetech global</span>
+      <span class="logo-item">logitech</span>
+      <span class="logo-item">Google Cloud</span>
+      <span class="logo-item"># slack</span>
+      <span class="logo-item">&#9638; Microsoft</span>
+      <span class="logo-item">Expensify</span>
+      <span class="logo-item">BARK&bull;BOX</span>
+      <span class="logo-item">PHILIPS</span>
+    </div>
+  </section>
+
+  <!-- LOWER CONTENT SECTION -->
+  <main class="content-section">
+    <h2>The difference between a good answer and a great one? Context.</h2>
+
+    <div class="feature-box">
+      <div class="metric-highlight">
+        <span class="metric-badge">15k+</span>
+        <p>Global companies using Stack Internal</p>
+      </div>
+      <div class="mock-ui">
+        <div class="mock-ui-header">
+          <span>Stack Internal &mdash; Enterprise Knowledge Base</span>
+          <span>New chat</span>
+        </div>
+        <div class="mock-ui-body">
+          <p><strong>Verified Answer:</strong> Connect your team's engineering documentation, Q&amp;A threads, and AI workflows in one trusted workspace.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FLOATING COOKIE CONSENT CARD -->
+  <div class="cookie-card" id="cookieBox">
+    <p>By clicking "Accept all cookies", you agree Stack Exchange can store cookies on your device and disclose information in accordance with our <a href="#">Cookie Policy</a>.</p>
+    <div class="cookie-actions">
+      <button class="cookie-btn" onclick="document.getElementById('cookieBox').style.display='none'">Accept all</button>
+      <button class="cookie-btn" onclick="document.getElementById('cookieBox').style.display='none'">Necessary cookies only</button>
+    </div>
+    <a href="#" class="cookie-settings">Customize settings</a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Stack Overflow Business Replica &mdash; Group 2 Web Systems Exam.</p>
+  </footer>
+
+</body>
+</html>
