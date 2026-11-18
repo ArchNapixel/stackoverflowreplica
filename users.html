@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Users - Stack Overflow</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <a href="#content" class="skip">Skip to main content</a>
+
+  <!-- ================= TOP BAR ================= -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="index.html" class="logo">
+        <svg width="22" height="26" viewBox="0 0 32 37" aria-hidden="true">
+          <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#bcbbbb"/>
+          <path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#f48024"/>
+        </svg>
+        stack<b>overflow</b>
+      </a>
+      <nav class="topnav">
+        <a href="About.html">About</a>
+        <details class="products">
+          <summary>Products</summary>
+          <div class="products-menu">
+            <a href="product_si.html"><b>Stack Internal</b><span>Implement a knowledge platform layer to power your enterprise and AI tools.</span></a>
+            <a href="product_sdl.html"><b>Stack Data Licensing</b><span>Get access to top-class technical expertise with trusted &amp; attributed content.</span></a>
+            <a href="product_ads.html"><b>Stack Ads</b><span>Connect your brand to the world’s most trusted technologist communities.</span></a>
+            <a href="#" class="pm-sep"><b>Releases</b><span>Keep up-to-date on features we add to Stack Overflow and Stack Internal.</span></a>
+            <a href="About.html" class="pm-sep pm-plain">About the company</a>
+            <a href="articles.html" class="pm-plain">Visit the blog</a>
+          </div>
+        </details>
+        <a href="product_si.html">Stack Internal</a>
+      </nav>
+      <label class="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M15.5 15.5 21 21"/></svg>
+        <input type="search" placeholder="Search…" aria-label="Search" title="Search supports filters by tag, author, exact phrase, answer count, score, or accepted status.">
+      </label>
+      <a href="#" class="icon-btn" aria-label="Help">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><text x="12" y="17" text-anchor="middle" font-size="14" font-weight="700" fill="#fff" font-family="Arial">?</text></svg>
+      </a>
+      <a href="#" class="icon-btn" aria-label="Site switcher">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="2" y="3" width="20" height="4" rx="1.5"/><rect x="2" y="9" width="20" height="4" rx="1.5"/><path d="M2 15h20v3a1.5 1.5 0 0 1-1.5 1.5H14l-3 2.5v-2.5H3.5A1.5 1.5 0 0 1 2 18z"/></svg>
+      </a>
+      <a href="Login.html" class="btn btn-outline">Log in</a>
+      <a href="Login.html" class="btn btn-blue">Sign up</a>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ================= LEFT SIDEBAR ================= -->
+    <aside class="leftbar">
+      <nav class="sidenav">
+        <a href="index.html">&#8962; Home</a>
+        <a href="questions.html">&#9783; Questions</a>
+        <a href="ai-assist.html">&#10022; AI Assist</a>
+        <a href="tags.html">&#9873; Tags</a>
+        <a href="agents.html" class="gap">{ } Stack Overflow for Agents</a>
+        <a href="challenges.html" class="gap">&#9650; Challenges</a>
+        <a href="chat.html">&#9776; Chat</a>
+        <a href="articles.html">&#9636; Articles</a>
+        <a href="users.html" class="active">&#9786; Users</a>
+        <a href="#" class="gap">&#9638; Companies</a>
+        <a href="#">&#9636; Developer Story</a>
+      </nav>
+
+      <div class="side-block">
+        <h4>Collectives <span class="plus">+</span></h4>
+        <p>Communities for your favorite technologies. <a href="#">Explore all Collectives</a></p>
+      </div>
+
+      <div class="side-block">
+        <h4>Stack Internal</h4>
+        <div class="si-art" aria-hidden="true">
+          <span class="c-orange">&#10005;</span><span class="c-yellow">&#9888;</span>
+          <span class="c-green">&#10003;</span><span class="c-purple">{ }</span>
+          <span class="si-verify">verify |</span>
+        </div>
+        <p>Turn scattered docs and code into trusted AI context. Explore the new Stack Internal platform.</p>
+        <a href="product_si.html" class="btn btn-blue btn-block">Create a workspace</a>
+      </div>
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+    <main id="content" class="main">
+      <h1 class="page-title">Users</h1>
+      <div class="tags-bar">
+        <label class="search tags-filter">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M15.5 15.5 21 21"/></svg>
+          <input type="text" id="userFilter" placeholder="Filter by user" aria-label="Filter by user">
+        </label>
+        <div class="tabs">
+          <a href="#" class="on">Reputation</a><a href="#">New users</a><a href="#">Voters</a><a href="#">Editors</a><a href="#">Moderators</a>
+        </div>
+      </div>
+      <div class="periods"><a href="#" class="on">week</a><a href="#">month</a><a href="#">quarter</a><a href="#">year</a><a href="#">all</a></div>
+
+      <div class="user-grid" id="userGrid">
+        <div class="user-card" data-name="n.m.is-an-unemployed-ai-agent">
+          <span class="ava ava-lg" style="background:#4a6fd1">N</span>
+          <div>
+            <a href="#" class="user-name">n.m.is-an-unemployed-ai-agent</a>
+            
+            <b>1,061</b>
+            <span class="user-tags"><a href="#">c++</a><a href="#">c</a><a href="#">c++-faq</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="kamilcuk">
+          <span class="ava ava-lg" style="background:#2a8f8f">K</span>
+          <div>
+            <a href="#" class="user-name">KamilCuk</a>
+            
+            <b>535</b>
+            <span class="user-tags"><a href="#">bash</a><a href="#">c</a><a href="#">linux</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="chqrlie">
+          <span class="ava ava-lg" style="background:#d0763a">C</span>
+          <div>
+            <a href="#" class="user-name">chqrlie</a>
+            <span class="user-loc">France</span>
+            <b>393</b>
+            <span class="user-tags"><a href="#">c</a><a href="#">arrays</a><a href="#">pointers</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="markp-fuso">
+          <span class="ava ava-lg" style="background:#d14a8b">M</span>
+          <div>
+            <a href="#" class="user-name">markp-fuso</a>
+            <span class="user-loc">North America</span>
+            <b>365</b>
+            <span class="user-tags"><a href="#">bash</a><a href="#">awk</a><a href="#">shell</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="ed morton">
+          <span class="ava ava-lg" style="background:#7b5cd6">E</span>
+          <div>
+            <a href="#" class="user-name">Ed Morton</a>
+            <span class="user-loc">USA</span>
+            <b>359</b>
+            <span class="user-tags"><a href="#">awk</a><a href="#">bash</a><a href="#">sed</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="tanveer munir">
+          <span class="ava ava-lg" style="background:#7b5cd6">T</span>
+          <div>
+            <a href="#" class="user-name">Tanveer Munir</a>
+            <span class="user-loc">Lahore, Pakistan</span>
+            <b>321</b>
+            <span class="user-tags"><a href="#">android</a><a href="#">java</a><a href="#">okhttp</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="erwin brandstetter">
+          <span class="ava ava-lg" style="background:#2a8f8f">E</span>
+          <div>
+            <a href="#" class="user-name">Erwin Brandstetter</a>
+            <span class="user-loc">Vienna, Austria</span>
+            <b>320</b>
+            <span class="user-tags"><a href="#">postgresql</a><a href="#">sql</a><a href="#">plpgsql</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="fedor">
+          <span class="ava ava-lg" style="background:#a34a4a">F</span>
+          <div>
+            <a href="#" class="user-name">Fedor</a>
+            
+            <b>290</b>
+            <span class="user-tags"><a href="#">c++</a><a href="#">language-lawyer</a><a href="#">c++20</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="artyer">
+          <span class="ava ava-lg" style="background:#3b7ea1">A</span>
+          <div>
+            <a href="#" class="user-name">Artyer</a>
+            
+            <b>280</b>
+            <span class="user-tags"><a href="#">c++</a><a href="#">c++20</a><a href="#">language-lawyer</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="michael geary">
+          <span class="ava ava-lg" style="background:#4a6fd1">M</span>
+          <div>
+            <a href="#" class="user-name">Michael Geary</a>
+            
+            <b>280</b>
+            <span class="user-tags"><a href="#">javascript</a><a href="#">jquery</a><a href="#">google-maps</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="manngo">
+          <span class="ava ava-lg" style="background:#b8a12a">M</span>
+          <div>
+            <a href="#" class="user-name">Manngo</a>
+            <span class="user-loc">Australia</span>
+            <b>278</b>
+            <span class="user-tags"><a href="#">javascript</a><a href="#">html</a><a href="#">attributes</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="mahdi hosseini">
+          <span class="ava ava-lg" style="background:#d14a8b">M</span>
+          <div>
+            <a href="#" class="user-name">Mahdi Hosseini</a>
+            <span class="user-loc">Earth</span>
+            <b>272</b>
+            <span class="user-tags"><a href="#">c</a><a href="#">c23</a><a href="#">embed</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="jarod42">
+          <span class="ava ava-lg" style="background:#b8a12a">J</span>
+          <div>
+            <a href="#" class="user-name">Jarod42</a>
+            <span class="user-loc">France</span>
+            <b>268</b>
+            <span class="user-tags"><a href="#">c++</a><a href="#">templates</a><a href="#">c++11</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="mklement0">
+          <span class="ava ava-lg" style="background:#d14a8b">M</span>
+          <div>
+            <a href="#" class="user-name">mklement0</a>
+            <span class="user-loc">United States</span>
+            <b>263</b>
+            <span class="user-tags"><a href="#">powershell</a><a href="#">bash</a><a href="#">shell</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="booboo">
+          <span class="ava ava-lg" style="background:#b8a12a">B</span>
+          <div>
+            <a href="#" class="user-name">Booboo</a>
+            
+            <b>259</b>
+            <span class="user-tags"><a href="#">python</a><a href="#">multiprocessing</a><a href="#">python-3.x</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="朱爱兵">
+          <span class="ava ava-lg" style="background:#5aa35a">朱</span>
+          <div>
+            <a href="#" class="user-name">朱爱兵</a>
+            
+            <b>252</b>
+            <span class="user-tags"><a href="#">python</a><a href="#">numpy</a><a href="#">cpython</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="fred bill">
+          <span class="ava ava-lg" style="background:#d0763a">F</span>
+          <div>
+            <a href="#" class="user-name">Fred Bill</a>
+            
+            <b>230</b>
+            <span class="user-tags"><a href="#">python</a><a href="#">pandas</a><a href="#">vs-code</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="daniel sodkiewicz">
+          <span class="ava ava-lg" style="background:#5aa35a">D</span>
+          <div>
+            <a href="#" class="user-name">Daniel Sodkiewicz</a>
+            
+            <b>220</b>
+            <span class="user-tags"><a href="#">lazy-loading</a><a href="#">python-import</a><a href="#">python</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="einpoklum">
+          <span class="ava ava-lg" style="background:#7b5cd6">E</span>
+          <div>
+            <a href="#" class="user-name">einpoklum</a>
+            <span class="user-loc">Haifa, Palestine</span>
+            <b>216</b>
+            <span class="user-tags"><a href="#">c++</a><a href="#">c++11</a><a href="#">c++-faq</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="j_h">
+          <span class="ava ava-lg" style="background:#3b7ea1">J</span>
+          <div>
+            <a href="#" class="user-name">J_H</a>
+            <span class="user-loc">Menlo Park, CA, United States</span>
+            <b>195</b>
+            <span class="user-tags"><a href="#">python</a><a href="#">python-3.x</a><a href="#">jupyter-notebook</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="james smith">
+          <span class="ava ava-lg" style="background:#2a8f8f">J</span>
+          <div>
+            <a href="#" class="user-name">James Smith</a>
+            <span class="user-loc">Silicon Valley</span>
+            <b>193</b>
+            <span class="user-tags"><a href="#">c#</a><a href="#">linqpad</a><a href="#">csvhelper</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="sweeper">
+          <span class="ava ava-lg" style="background:#3b7ea1">S</span>
+          <div>
+            <a href="#" class="user-name">Sweeper</a>
+            <span class="user-loc">HK</span>
+            <b>190</b>
+            <span class="user-tags"><a href="#">swift</a><a href="#">java</a><a href="#">c#</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="shadowranger">
+          <span class="ava ava-lg" style="background:#3b7ea1">S</span>
+          <div>
+            <a href="#" class="user-name">ShadowRanger</a>
+            <span class="user-loc">Columbia, MD</span>
+            <b>185</b>
+            <span class="user-tags"><a href="#">python</a><a href="#">python-3.x</a><a href="#">c++</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="zdeněk jelínek">
+          <span class="ava ava-lg" style="background:#3b7ea1">Z</span>
+          <div>
+            <a href="#" class="user-name">Zdeněk Jelínek</a>
+            <span class="user-loc">Královehradecký kraj, Czechia</span>
+            <b>184</b>
+            <span class="user-tags"><a href="#">c#</a><a href="#">.net</a><a href="#">c++</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="toni adreal">
+          <span class="ava ava-lg" style="background:#4a6fd1">T</span>
+          <div>
+            <a href="#" class="user-name">Toni Adreal</a>
+            <span class="user-loc">Ningbo, China</span>
+            <b>176</b>
+            <span class="user-tags"><a href="#">python</a><a href="#">caching</a><a href="#">python-requests</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="jay.sf">
+          <span class="ava ava-lg" style="background:#4a6fd1">J</span>
+          <div>
+            <a href="#" class="user-name">jay.sf</a>
+            <span class="user-loc">Zurich, Switzerland</span>
+            <b>175</b>
+            <span class="user-tags"><a href="#">r</a><a href="#">dataframe</a><a href="#">dplyr</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="asp">
+          <span class="ava ava-lg" style="background:#b8a12a">A</span>
+          <div>
+            <a href="#" class="user-name">ASP</a>
+            
+            <b>175</b>
+            <span class="user-tags"><a href="#">javascript</a><a href="#">html</a><a href="#">css</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="matthieu m.">
+          <span class="ava ava-lg" style="background:#b8a12a">M</span>
+          <div>
+            <a href="#" class="user-name">Matthieu M.</a>
+            <span class="user-loc">Zug, Switzerland</span>
+            <b>174</b>
+            <span class="user-tags"><a href="#">c++</a><a href="#">rust</a><a href="#">string</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="nimrag">
+          <span class="ava ava-lg" style="background:#b8a12a">N</span>
+          <div>
+            <a href="#" class="user-name">nimrag</a>
+            
+            <b>174</b>
+            <span class="user-tags"><a href="#">c</a><a href="#">algorithm</a><a href="#">multiplication</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="kooiinc">
+          <span class="ava ava-lg" style="background:#d0763a">K</span>
+          <div>
+            <a href="#" class="user-name">KooiInc</a>
+            <span class="user-loc">Netherlands</span>
+            <b>171</b>
+            <span class="user-tags"><a href="#">javascript</a><a href="#">arrays</a><a href="#">string</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="benzy neez">
+          <span class="ava ava-lg" style="background:#d0763a">B</span>
+          <div>
+            <a href="#" class="user-name">Benzy Neez</a>
+            <span class="user-loc">Switzerland</span>
+            <b>170</b>
+            <span class="user-tags"><a href="#">swiftui</a><a href="#">swift</a><a href="#">ios</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="starball ♦">
+          <span class="ava ava-lg" style="background:#2a8f8f">S</span>
+          <div>
+            <a href="#" class="user-name">starball ♦</a>
+            
+            <b>156</b>
+            <span class="user-tags"><a href="#">vs-code</a><a href="#">cmake</a><a href="#">c++</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="huang wen meng">
+          <span class="ava ava-lg" style="background:#c93c9b">H</span>
+          <div>
+            <a href="#" class="user-name">Huang Wen Meng</a>
+            
+            <b>156</b>
+            <span class="user-tags"><a href="#">x86</a><a href="#">assembly</a><a href="#">cpu-architecture</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="guru stron">
+          <span class="ava ava-lg" style="background:#2a8f8f">G</span>
+          <div>
+            <a href="#" class="user-name">Guru Stron</a>
+            <span class="user-loc">St. Petersburg</span>
+            <b>153</b>
+            <span class="user-tags"><a href="#">c#</a><a href="#">.net</a><a href="#">asp.net-core</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="johannes schaub - litb">
+          <span class="ava ava-lg" style="background:#b8a12a">J</span>
+          <div>
+            <a href="#" class="user-name">Johannes Schaub - litb</a>
+            <span class="user-loc">Frankfurt, Germany</span>
+            <b>150</b>
+            <span class="user-tags"><a href="#">c++</a><a href="#">templates</a><a href="#">c</a></span>
+          </div>
+        </div>
+        <div class="user-card" data-name="ciro santilli ourbigbook.com">
+          <span class="ava ava-lg" style="background:#4a6fd1">C</span>
+          <div>
+            <a href="#" class="user-name">Ciro Santilli OurBigBook.com</a>
+            <span class="user-loc">1999法轮功，2018包子露宪</span>
+            <b>150</b>
+            <span class="user-tags"><a href="#">git</a><a href="#">c</a><a href="#">c++</a></span>
+          </div>
+        </div>
+      </div>
+      <p class="tag-empty" id="userEmpty" hidden>No users match that filter.</p>
+
+      <div class="pager">
+        <div class="pages">
+          <a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a>
+          <span>…</span><a href="#">868483</a><a href="#">Next</a>
+        </div>
+        <a href="#">weekly / monthly / quarterly reputation leagues</a>
+      </div>
+    </main>
+    
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <svg class="footer-logo" width="32" height="37" viewBox="0 0 32 37" aria-hidden="true">
+        <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#bcbbbb"/>
+        <path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#bcbbbb"/>
+      </svg>
+      <div class="footer-cols">
+        <div>
+          <h5>Stack Overflow</h5>
+          <a href="questions.html">Questions</a><a href="#">Help</a><a href="chat.html">Chat</a>
+        </div>
+        <div>
+          <h5>Business</h5>
+          <a href="product_si.html">Stack Internal</a><a href="product_sdl.html">Stack Data Licensing</a><a href="product_ads.html">Stack Ads</a>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <a href="About.html">About</a><a href="#">Press</a><a href="#">Work Here</a><a href="#">Legal</a><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Contact Us</a><a href="#">Cookie Settings</a><a href="#">Cookie Policy</a>
+        </div>
+        <div>
+          <h5>Stack Overflow’s open communities</h5>
+          <a href="#">Technology</a><a href="#">Culture &amp; recreation</a><a href="#">Life &amp; arts</a><a href="#">Science</a><a href="#">Professional</a><a href="#">Business</a>
+          <a href="product_sdl.html#api" class="gap">API</a><a href="product_sdl.html">Data</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social"><a href="articles.html">Blog</a><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">LinkedIn</a><a href="#">Instagram</a></div>
+        <p>Site design / logo © 2026 Stack Exchange Inc; user contributions licensed under <a href="#">CC BY-SA</a> . rev 2026.11.17.47731</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const cards = document.querySelectorAll('.user-card');
+    document.getElementById('userFilter').addEventListener('input', e => {
+      const q = e.target.value.trim().toLowerCase();
+      let shown = 0;
+      cards.forEach(c => { c.hidden = !c.dataset.name.includes(q); if (!c.hidden) shown++; });
+      document.getElementById('userEmpty').hidden = shown > 0;
+    });
+  </script>
+  <script>
+    // Products dropdown: close when clicking elsewhere or pressing Esc
+    const productsMenu = document.querySelector('details.products');
+    document.addEventListener('click', e => { if (!productsMenu.contains(e.target)) productsMenu.open = false; });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') productsMenu.open = false; });
+  </script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenges - Stack Overflow</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <a href="#content" class="skip">Skip to main content</a>
+
+  <!-- ================= TOP BAR ================= -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="index.html" class="logo">
+        <svg width="22" height="26" viewBox="0 0 32 37" aria-hidden="true">
+          <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#bcbbbb"/>
+          <path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#f48024"/>
+        </svg>
+        stack<b>overflow</b>
+      </a>
+      <nav class="topnav">
+        <a href="About.html">About</a>
+        <details class="products">
+          <summary>Products</summary>
+          <div class="products-menu">
+            <a href="product_si.html"><b>Stack Internal</b><span>Implement a knowledge platform layer to power your enterprise and AI tools.</span></a>
+            <a href="product_sdl.html"><b>Stack Data Licensing</b><span>Get access to top-class technical expertise with trusted &amp; attributed content.</span></a>
+            <a href="product_ads.html"><b>Stack Ads</b><span>Connect your brand to the world’s most trusted technologist communities.</span></a>
+            <a href="#" class="pm-sep"><b>Releases</b><span>Keep up-to-date on features we add to Stack Overflow and Stack Internal.</span></a>
+            <a href="About.html" class="pm-sep pm-plain">About the company</a>
+            <a href="articles.html" class="pm-plain">Visit the blog</a>
+          </div>
+        </details>
+        <a href="product_si.html">Stack Internal</a>
+      </nav>
+      <label class="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M15.5 15.5 21 21"/></svg>
+        <input type="search" placeholder="Search…" aria-label="Search" title="Search supports filters by tag, author, exact phrase, answer count, score, or accepted status.">
+      </label>
+      <a href="#" class="icon-btn" aria-label="Help">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><text x="12" y="17" text-anchor="middle" font-size="14" font-weight="700" fill="#fff" font-family="Arial">?</text></svg>
+      </a>
+      <a href="#" class="icon-btn" aria-label="Site switcher">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="2" y="3" width="20" height="4" rx="1.5"/><rect x="2" y="9" width="20" height="4" rx="1.5"/><path d="M2 15h20v3a1.5 1.5 0 0 1-1.5 1.5H14l-3 2.5v-2.5H3.5A1.5 1.5 0 0 1 2 18z"/></svg>
+      </a>
+      <a href="Login.html" class="btn btn-outline">Log in</a>
+      <a href="Login.html" class="btn btn-blue">Sign up</a>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ================= LEFT SIDEBAR ================= -->
+    <aside class="leftbar">
+      <nav class="sidenav">
+        <a href="index.html">&#8962; Home</a>
+        <a href="questions.html">&#9783; Questions</a>
+        <a href="ai-assist.html">&#10022; AI Assist</a>
+        <a href="tags.html">&#9873; Tags</a>
+        <a href="agents.html" class="gap">{ } Stack Overflow for Agents</a>
+        <a href="challenges.html" class="active gap">&#9650; Challenges</a>
+        <a href="chat.html">&#9776; Chat</a>
+        <a href="articles.html">&#9636; Articles</a>
+        <a href="users.html">&#9786; Users</a>
+        <a href="#" class="gap">&#9638; Companies</a>
+        <a href="#">&#9636; Developer Story</a>
+      </nav>
+
+      <div class="side-block">
+        <h4>Collectives <span class="plus">+</span></h4>
+        <p>Communities for your favorite technologies. <a href="#">Explore all Collectives</a></p>
+      </div>
+
+      <div class="side-block">
+        <h4>Stack Internal</h4>
+        <div class="si-art" aria-hidden="true">
+          <span class="c-orange">&#10005;</span><span class="c-yellow">&#9888;</span>
+          <span class="c-green">&#10003;</span><span class="c-purple">{ }</span>
+          <span class="si-verify">verify |</span>
+        </div>
+        <p>Turn scattered docs and code into trusted AI context. Explore the new Stack Internal platform.</p>
+        <a href="product_si.html" class="btn btn-blue btn-block">Create a workspace</a>
+      </div>
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+    <main id="content" class="main">
+      <h1 class="page-title">Challenges</h1>
+      <p class="page-note"><span class="info">i</span> Dive into our coding challenges to have fun and acquire new skills. <a href="chat.html">Join us in chat</a> to discuss!</p>
+
+      <section class="ch-card" id="chIntro">
+        <button type="button" class="ch-close" aria-label="Dismiss" onclick="document.getElementById('chIntro').remove()">&#10005;</button>
+        <h2>NEW! Grow your skills</h2>
+        <p class="ch-lead">Challenges offer an easy way to test your understanding and pick up some additional skills along the way.</p>
+        <ol class="ch-steps">
+          <li><span class="ch-dot on">&#9650;</span><div><h4>Add your entry to the challenge</h4><p>Put your coding skills to the test and share your answer with everyone. We're excited to see what you've come up with.</p></div></li>
+          <li><span class="ch-dot">&#9650;</span><div><h4>Time to discuss and vote</h4><p>Explore the diverse solutions from our community. Share your thoughts through comments, ask questions, and appreciate great code by casting your vote for the best entry.</p></div></li>
+          <li><span class="ch-dot">&#127942;</span><div><h4>And the awards go to...</h4><p>Your brilliant solutions earn you special recognition! We'll be highlighting top contributors and insightful approaches, so put your best code forward.</p></div></li>
+        </ol>
+        <div class="ch-feedback" id="chFeedback">
+          <span>Are you interested in Challenges on Stack Overflow?</span>
+          <button type="button" class="btn btn-outline" onclick="document.getElementById('chFeedback').textContent='Thanks for your feedback!'">&#128077; Yes</button>
+          <button type="button" class="btn btn-outline" onclick="document.getElementById('chFeedback').textContent='Thanks for your feedback!'">&#128078; No</button>
+        </div>
+      </section>
+
+      <div class="main-sub">
+        <span class="count">26 challenges</span>
+        <label class="ch-sort">Sorted by:
+          <select><option>Newest (default)</option><option>Most votes</option><option>Most entries</option></select>
+        </label>
+      </div>
+
+      <div class="qlist">
+        <div class="q">
+          <div class="q-stats"><span><b>15</b> votes</span><span><b>1k</b> views</span><span><b>13</b> entries</span></div>
+          <div class="q-body">
+            <h3><a href="#">Challenge #25: Count Your Syllables</a></h3>
+            <p>The Challenge A haiku is a style of Japanese poetry that, when written in English follows a defined pattern: A 3 line poem, where the first line has 5 syllables, the second line has 7 syllables, and ...</p>
+            <div class="q-meta">
+              <div class="tags grey"><a href="#">input</a><a href="#">json</a><a href="#">output</a><a href="#">text</a></div>
+              <div class="user"><span class="ava " style="background:#4a6fd1">M</span><a href="#">M--</a> <b>37.3k</b> responded 21 hours ago</div>
+            </div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="q-stats"><span><b>22</b> votes</span><span><b>2k</b> views</span><span><b>53</b> entries</span></div>
+          <div class="q-body">
+            <h3><a href="#">Challenge #24: Don&#x27;t Fold [COMPLETED]</a></h3>
+            <p>Update on November 12, 2026 Do to staff error in not providing enough clarity around the &quot;wheel&quot; rule in poker, we are accepting two possible correct answers for this challenge. The winners ...</p>
+            <div class="q-meta">
+              <div class="tags grey"><a href="#">analysis</a><a href="#">json</a><a href="#">poker</a></div>
+              <div class="user"><span class="ava " style="background:#a34a4a">S</span><a href="#">Sasha</a> <span class="mod">&#9830;</span> <b>101</b> edited Nov 12 at 20:40</div>
+            </div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="q-stats"><span><b>37</b> votes</span><span><b>3k</b> views</span><span><b>70</b> entries</span></div>
+          <div class="q-body">
+            <h3><a href="#">Challenge #23: Fun with Arithmetic [COMPLETED]</a></h3>
+            <p>Update on October 15, 2026 The winners of this challenge are: Abhishek Sahu, Alex Kudryashev, Alexander Senko, Ali Sheikhpour, Amir Roox, André, Arin Ghazarian, Arnab Nandy, Asta Beast, cottontail, ...</p>
+            <div class="q-meta">
+              <div class="tags grey"><a href="#">integer-arithmetic</a><a href="#">math</a></div>
+              <div class="user"><span class="ava " style="background:#a34a4a">S</span><a href="#">Sasha</a> <span class="mod">&#9830;</span> <b>101</b> edited Oct 15 at 22:11</div>
+            </div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="q-stats"><span><b>23</b> votes</span><span><b>3k</b> views</span><span><b>23</b> entries</span></div>
+          <div class="q-body">
+            <h3><a href="#">Challenge #22: Yoga Class Design [COMPLETED]</a></h3>
+            <p>Update on September 16, 2026 The winners of this challenge are: André, Daniel T, Fred Bill, hyj, Jannik S., JMP, Jubin Soni, Kane Hodgkinson, M--, NoDakker, sehe, TKDKid1000, Tomáš Zíma, user2339302, ...</p>
+            <div class="q-meta">
+              <div class="tags grey"><a href="#">json</a><a href="#">math</a></div>
+              <div class="user"><span class="ava " style="background:#3b7ea1">S</span><a href="#">sehe</a> <b>402k</b> responded Oct 8 at 22:21</div>
+            </div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="q-stats"><span><b>24</b> votes</span><span><b>3k</b> views</span><span><b>22</b> entries</span></div>
+          <div class="q-body">
+            <h3><a href="#">Challenge #21: Knight&#x27;s Sudoku [COMPLETED]</a></h3>
+            <p>Update on August 18, 2026 The winners of this challenge are: André, Arin Ghazarian, Daniel T, Fred Bill, Go Cool Malhotra, hynekcer, Jakkapong Rattananen, Jannik S., John Bollinger, Nevpzo, NoDakker, ...</p>
+            <div class="q-meta">
+              <div class="tags grey"><a href="#">sudoku</a></div>
+              <div class="user"><span class="ava " style="background:#2a8f8f">S</span><a href="#">S.M.Saeedy</a> <b>1</b> responded Sep 18 at 12:06</div>
+            </div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="q-stats"><span><b>31</b> votes</span><span><b>4k</b> views</span><span><b>76</b> entries</span></div>
+          <div class="q-body">
+            <h3><a href="#">Challenge #20: We all scream for Ice Cream! [COMPLETED]</a></h3>
+            <p>Update on July 17: This challenge is now completed, thanks to everyone who participated! The correct output for each scenario is as follows: Scenario one: Chocolate: 25 tubs Vanilla: 28 tubs ...</p>
+            <div class="q-meta">
+              <div class="tags grey"><a href="#">math</a></div>
+              <div class="user"><span class="ava " style="background:#b8a12a">M</span><a href="#">Muhammad Hassan</a> <b>1</b> responded Aug 6 at 6:25</div>
+            </div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="q-stats"><span><b>29</b> votes</span><span><b>4k</b> views</span><span><b>21</b> entries</span></div>
+          <div class="q-body">
+            <h3><a href="#">Challenge #19: In Other Words... [COMPLETED]</a></h3>
+            <p>Update on June 17: This challenge is now closed, thanks to everyone who gave it a shot. The winners of this challenge are: André, Apfelvater, Daniel T, Fred Bill, Jannik S., joaocandre, Kane ...</p>
+            <div class="q-meta">
+              <div class="tags grey"><a href="#">sorting</a><a href="#">text</a></div>
+              <div class="user"><span class="ava " style="background:#d0763a">W</span><a href="#">WeCanDoItGuys</a> <b>189</b> responded Sep 5 at 21:25</div>
+            </div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="q-stats"><span><b>44</b> votes</span><span><b>6k</b> views</span><span><b>45</b> entries</span></div>
+          <div class="q-body">
+            <h3><a href="#">Challenge #18: Hidden in Plain Sight [COMPLETED]</a></h3>
+            <p>Update on May 14, 2026: This challenge is now closed, thanks to everyone who participated. The winners of this challenge are: AKHolland, amance, Aravind K. B, Book, cknott, Daniel T, Dmitrii Bychenko, ...</p>
+            <div class="q-meta">
+              <div class="tags grey"><a href="#">image-processing</a><a href="#">pixel</a><a href="#">steganography</a></div>
+              <div class="user"><span class="ava " style="background:#2a8f8f">C</span><a href="#">Community</a> <b>1</b> responded Aug 27 at 18:02</div>
+            </div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="q-stats"><span><b>31</b> votes</span><span><b>5k</b> views</span><span><b>27</b> entries</span></div>
+          <div class="q-body">
+            <h3><a href="#">Challenge #17: The Accurate Selection [COMPLETED]</a></h3>
+            <p>Update on April 14, 2026: This challenge is now closed. Thanks to everyone who participated! The winners of this challenge, who solved all 10 selections, are: Atmo, cknott, keymasterr, Antoine, ...</p>
+            <div class="q-meta">
+              <div class="tags grey"><a href="#">css</a></div>
+              <div class="user"><span class="ava " style="background:#a34a4a">S</span><a href="#">Sasha</a> <span class="mod">&#9830;</span> <b>101</b> edited Apr 15 at 15:30</div>
+            </div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="q-stats"><span><b>54</b> votes</span><span><b>9k</b> views</span><span><b>83</b> entries</span></div>
+          <div class="q-body">
+            <h3><a href="#">Challenge #16: Change is the only constant [COMPLETED]</a></h3>
+            <p>Update on March 12, 2026: Thanks to everyone who participated in Challenge 16! The correct output is: 73, -1, 6, -1, 4, 2, -1, 5, 2, -1, 5, 2, 3, -1, 2, 4, 4, 2, 2, 2, 4, 4, 3, 2, 3, 2, 4, 3, 3, 4, 3, ...</p>
+            <div class="q-meta">
+              <div class="tags grey"><a href="#">arrays</a><a href="#">count</a></div>
+              <div class="user"><span class="ava " style="background:#2a8f8f">C</span><a href="#">Community</a> <b>1</b> responded Aug 27 at 18:05</div>
+            </div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="q-stats"><span><b>78</b> votes</span><span><b>10k</b> views</span><span><b>100</b> entries</span></div>
+          <div class="q-body">
+            <h3><a href="#">Challenge #15: Mystery Alphabet Decoder [COMPLETED]</a></h3>
+            <p>Update on February 13, 2026: Thanks to everyone who participated in Challenge 15! The correct output for the alien alphabet is: ⪏⊚⊕⊟⊞⨙⊛∭↔⊠⊝৲⊣⊗⇲⊥⊢◉⊡⊤◴⚆⊜↪ 87 users got the right answer, out of 101 ...</p>
+            <div class="q-meta">
+              <div class="tags grey"><a href="#">sorting</a><a href="#">string</a></div>
+              <div class="user"><span class="ava " style="background:#a34a4a">S</span><a href="#">Sasha</a> <span class="mod">&#9830;</span> <b>101</b> edited Apr 14 at 18:03</div>
+            </div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="q-stats"><span><b>63</b> votes</span><span><b>10k</b> views</span><span><b>96</b> entries</span></div>
+          <div class="q-body">
+            <h3><a href="#">Challenge #14: Signal from Noise [COMPLETED]</a></h3>
+            <p>Update on January 8, 2026: Huge thanks to everyone who participated in the challenge. The conditions for signal/noise were tricky, and we appreciate the careful implementations! The correct sum of the ...</p>
+            <div class="q-meta">
+              <div class="tags grey"><a href="#">arrays</a><a href="#">sorting</a></div>
+              <div class="user"><span class="ava " style="background:#d14a8b">S</span><a href="#">Shubham Singh</a> <b>1</b> responded Nov 13 at 17:10</div>
+            </div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="q-stats"><span><b>83</b> votes</span><span><b>9k</b> views</span><span><b>73</b> entries</span></div>
+          <div class="q-body">
+            <h3><a href="#">Challenge #13: Integer sorting in a grid [COMPLETED]</a></h3>
+            <p>Update on October Dec 4: Huge thanks to everyone who participated in the challenge. The correct answer is that 45 of the sets were impossible to put into the grid. We received 70 responses from 68 ...</p>
+            <div class="q-meta">
+              <div class="tags grey"><a href="#">sorting</a></div>
+              <div class="user"><span class="ava " style="background:#3b7ea1">H</span><a href="#">hyj</a> <b>1</b> responded Jun 15 at 7:31</div>
+            </div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="q-stats"><span><b>42</b> votes</span><span><b>5k</b> views</span><span><b>10</b> entries</span></div>
+          <div class="q-body">
+            <h3><a href="#">Challenge #12: Spooky Halloween scene [COMPLETED]</a></h3>
+            <p>Update, Nov 13: Thanks to all that participated and voted in this challenge! In terms of votes, top 3 entries were: 1st place: Phil with a spooky house scene 2nd place: Death-is-the-real-truth (...</p>
+            <div class="q-meta">
+              <div class="tags grey"><a href="#">css</a><a href="#">html</a></div>
+              <div class="user"><span class="ava " style="background:#c93c9b">Y</span><a href="#">Yel MartÍnez</a> <b>29</b> responded Sep 17 at 6:50</div>
+            </div>
+          </div>
+        </div>
+        <div class="q">
+          <div class="q-stats"><span><b>63</b> votes</span><span><b>6k</b> views</span><span><b>55</b> entries</span></div>
+          <div class="q-body">
+            <h3><a href="#">Challenge #11: Taco crawl optimization [COMPLETED]</a></h3>
+            <p>Update on October 23: Huge thanks to everyone who participated in the challenge. The correct routing was [0,7,5,6,2,10,4] for 97 tastiness and 2.8945 tastiness/distance. 43 of the 53 entries provided ...</p>
+            <div class="q-meta">
+              <div class="tags grey"><a href="#">optimization</a><a href="#">traveling-salesman</a></div>
+              <div class="user"><span class="ava " style="background:#b8a12a">D</span><a href="#">DIWAKAR SUMBRIA</a> <b>1</b> responded Nov 29, 2025 at 21:24</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pager">
+        <div class="pages"><a href="#" class="on">1</a><a href="#">2</a><a href="#">Next</a></div>
+        <div class="pages"><a href="#" class="on">15</a><a href="#">30</a><a href="#">50</a><span>per page</span></div>
+      </div>
+    </main>
+
+    <!-- ================= RIGHT SIDEBAR ================= -->
+    <aside class="rightbar">
+      <div class="card guide">
+        <h4 class="card-title">Challenge guidelines</h4>
+        <details open><summary>Enter the challenge and share!</summary><p>Use challenges to gain new skills and engage with the community to share your take on the answer! Keep your entries on topic for the best chance to win.</p></details><details open><summary>Upvote the best answer</summary><p>Cast your upvote for the best answer!</p><p>See all entries once the voting period starts. Or, submit your own now for an early comparison.</p></details><details open><summary>Be welcoming and patient</summary><p>We expect all users to treat one another with kindness and respect. Remember, everyone is here to learn, and sometimes while learning, people make mistakes. See <a href="#">code of conduct</a>.</p></details><details open><summary>No resume or job listings</summary><p>Challenges are not for sharing your resume or job listing.</p></details><details open><summary>No overt self-promotion</summary><p>If your post happens to be about your product or website, you must disclose your affiliation. <a href="#">See spam guidelines and best practices.</a></p></details>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h4>Collectives</h4><a href="#">see all</a></div>
+        <div class="collective">
+          <div class="col-top"><span class="col-logo" style="background:#0078d4">MS</span><div><b>Microsoft Azure</b><small>32k Members</small></div><a href="#" class="btn btn-outline btn-sm">Join</a></div>
+          <p>A collective for developers to engage, share, and learn about Microsoft Azure’s open-source frameworks, languages, and platform. This collective is organized and managed by the Stack Overflow community.</p>
+        </div><div class="collective">
+          <div class="col-top"><span class="col-logo" style="background:#2266b8">R</span><div><b>R Language</b><small>17k Members</small></div><a href="#" class="btn btn-outline btn-sm">Join</a></div>
+          <p>A collective where data scientists and AI researchers gather to find, share, and learn about R and other subtags like knitr and dplyr.</p>
+        </div><div class="collective">
+          <div class="col-top"><span class="col-logo" style="background:#e8730c">NLP</span><div><b>NLP</b><small>14k Members</small></div><a href="#" class="btn btn-outline btn-sm">Join</a></div>
+          <p>A collective focused on NLP (natural language processing), the transformation or extraction of useful information from natural language data.</p>
+        </div>
+      </div>
+
+      <div class="hot">
+        <h4>Hot Network Questions</h4>
+        <ul><li><a href="#">Mailbox post waterproofing</a></li><li><a href="#">Can a username violate a trademark in certain cases?</a></li><li><a href="#">Questions about CR circuit to use a lower holding voltage for this relay coil</a></li><li><a href="#">Is it impossible to permanently ban a human from a digital platform due to GDPR?</a></li><li><a href="#">Continuity in the Furstenberg topology</a></li><li><a href="#">Where should Research Fellow appointments be included on CV</a></li><li><a href="#">Which Vampire the Masquerade book was explaining the rules for rolls of Difficulty above 10?</a></li><li><a href="#">Does “unless” in this sentence remove the limit, or set a condition for the benefit?</a></li><li><a href="#">Could this unusual structure found near the Narmada River in Madhya Pradesh, India, be a fossilized jaw of a prehistoric mammal?</a></li><li><a href="#">Can you still get a simple random sample even though some people might not even consider answering to the questionnaire?</a></li><li><a href="#">Why did Aristotle stipulate that a conclusion needs to be &quot;something different from the things supposed&quot;?</a></li><li><a href="#">Can I give a FAA logbook endorsement to someone I gave a military examination to prior to being certified as a CFI?</a></li><li><a href="#">How do Ι navigate copyright when it starts affecting my writing?</a></li><li><a href="#">Karatzas-Shreve Problem 1.3.2 (i): Construction of a Poisson process</a></li><li><a href="#">How to close a gap at the top corner of a storm door?</a></li><li><a href="#">lualatex fails to read the math table parameter for roots</a></li><li><a href="#">Where to publish a long, AI-assisted, computer-verified classification paper?</a></li><li><a href="#">Detecting heterogeneity in a stochastic process?</a></li><li><a href="#">Which chords are tonic, subdominant, and dominant-functioning in Mixolydian mode?</a></li><li><a href="#">Does training on a large amount of AI-generated material cause &quot;model collapse&quot;?</a></li><li><a href="#">Sizes of fibres on continous self-surjections of homgeneous spaces</a></li><li><a href="#">Is Yu Yu Hakasho set in Tokyo?</a></li></ul>
+        <a href="#" class="more">more hot questions</a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <svg class="footer-logo" width="32" height="37" viewBox="0 0 32 37" aria-hidden="true">
+        <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#bcbbbb"/>
+        <path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#bcbbbb"/>
+      </svg>
+      <div class="footer-cols">
+        <div>
+          <h5>Stack Overflow</h5>
+          <a href="questions.html">Questions</a><a href="#">Help</a><a href="chat.html">Chat</a>
+        </div>
+        <div>
+          <h5>Business</h5>
+          <a href="product_si.html">Stack Internal</a><a href="product_sdl.html">Stack Data Licensing</a><a href="product_ads.html">Stack Ads</a>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <a href="About.html">About</a><a href="#">Press</a><a href="#">Work Here</a><a href="#">Legal</a><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Contact Us</a><a href="#">Cookie Settings</a><a href="#">Cookie Policy</a>
+        </div>
+        <div>
+          <h5>Stack Overflow’s open communities</h5>
+          <a href="#">Technology</a><a href="#">Culture &amp; recreation</a><a href="#">Life &amp; arts</a><a href="#">Science</a><a href="#">Professional</a><a href="#">Business</a>
+          <a href="product_sdl.html#api" class="gap">API</a><a href="product_sdl.html">Data</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social"><a href="articles.html">Blog</a><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">LinkedIn</a><a href="#">Instagram</a></div>
+        <p>Site design / logo © 2026 Stack Exchange Inc; user contributions licensed under <a href="#">CC BY-SA</a> . rev 2026.11.17.47731</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Products dropdown: close when clicking elsewhere or pressing Esc
+    const productsMenu = document.querySelector('details.products');
+    document.addEventListener('click', e => { if (!productsMenu.contains(e.target)) productsMenu.open = false; });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') productsMenu.open = false; });
+  </script>
+</body>
+</html>

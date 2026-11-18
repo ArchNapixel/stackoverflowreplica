@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newest Questions - Stack Overflow</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <a href="#content" class="skip">Skip to main content</a>
+
+  <!-- ================= TOP BAR ================= -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="index.html" class="logo">
+        <svg width="22" height="26" viewBox="0 0 32 37" aria-hidden="true">
+          <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#bcbbbb"/>
+          <path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#f48024"/>
+        </svg>
+        stack<b>overflow</b>
+      </a>
+      <nav class="topnav">
+        <a href="About.html">About</a>
+        <details class="products">
+          <summary>Products</summary>
+          <div class="products-menu">
+            <a href="product_si.html"><b>Stack Internal</b><span>Implement a knowledge platform layer to power your enterprise and AI tools.</span></a>
+            <a href="product_sdl.html"><b>Stack Data Licensing</b><span>Get access to top-class technical expertise with trusted &amp; attributed content.</span></a>
+            <a href="product_ads.html"><b>Stack Ads</b><span>Connect your brand to the world’s most trusted technologist communities.</span></a>
+            <a href="#" class="pm-sep"><b>Releases</b><span>Keep up-to-date on features we add to Stack Overflow and Stack Internal.</span></a>
+            <a href="About.html" class="pm-sep pm-plain">About the company</a>
+            <a href="articles.html" class="pm-plain">Visit the blog</a>
+          </div>
+        </details>
+        <a href="product_si.html">Stack Internal</a>
+      </nav>
+      <label class="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M15.5 15.5 21 21"/></svg>
+        <input type="search" placeholder="Search…" aria-label="Search" title="Search supports filters by tag, author, exact phrase, answer count, score, or accepted status.">
+      </label>
+      <a href="#" class="icon-btn" aria-label="Help">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><text x="12" y="17" text-anchor="middle" font-size="14" font-weight="700" fill="#fff" font-family="Arial">?</text></svg>
+      </a>
+      <a href="#" class="icon-btn" aria-label="Site switcher">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="2" y="3" width="20" height="4" rx="1.5"/><rect x="2" y="9" width="20" height="4" rx="1.5"/><path d="M2 15h20v3a1.5 1.5 0 0 1-1.5 1.5H14l-3 2.5v-2.5H3.5A1.5 1.5 0 0 1 2 18z"/></svg>
+      </a>
+      <a href="Login.html" class="btn btn-outline">Log in</a>
+      <a href="Login.html" class="btn btn-blue">Sign up</a>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ================= LEFT SIDEBAR ================= -->
+    <aside class="leftbar">
+      <nav class="sidenav">
+        <a href="index.html" class="active">&#8962; Home</a>
+        <a href="questions.html">&#9783; Questions</a>
+        <a href="ai-assist.html">&#10022; AI Assist</a>
+        <a href="tags.html">&#9873; Tags</a>
+        <a href="agents.html" class="gap">{ } Stack Overflow for Agents</a>
+        <a href="challenges.html" class="gap">&#9650; Challenges</a>
+        <a href="chat.html">&#9776; Chat</a>
+        <a href="articles.html">&#9636; Articles</a>
+        <a href="users.html">&#9786; Users</a>
+        <a href="#" class="gap">&#9638; Companies</a>
+        <a href="#">&#9636; Developer Story</a>
+      </nav>
+
+      <div class="side-block">
+        <h4>Collectives <span class="plus">+</span></h4>
+        <p>Communities for your favorite technologies. <a href="#">Explore all Collectives</a></p>
+      </div>
+
+      <div class="side-block">
+        <h4>Stack Internal</h4>
+        <div class="si-art" aria-hidden="true">
+          <span class="c-orange">&#10005;</span><span class="c-yellow">&#9888;</span>
+          <span class="c-green">&#10003;</span><span class="c-purple">{ }</span>
+          <span class="si-verify">verify |</span>
+        </div>
+        <p>Turn scattered docs and code into trusted AI context. Explore the new Stack Internal platform.</p>
+        <a href="product_si.html" class="btn btn-blue btn-block">Create a workspace</a>
+      </div>
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+    <main id="content" class="main">
+      <div class="main-head">
+        <h1>Newest Questions</h1>
+        <a href="#" class="btn btn-blue">Ask Question</a>
+      </div>
+
+      <div class="main-sub">
+        <span class="count">24,134,912 questions</span>
+        <div class="filters">
+          <div class="tabs">
+            <a href="#" class="on">Newest</a>
+            <a href="#">Active</a>
+            <a href="#">Bountied</a>
+            <a href="#">Unanswered</a>
+            <a href="#">More &#9662;</a>
+          </div>
+          <a href="#" class="btn btn-outline">&#9776; Filter</a>
+        </div>
+      </div>
+
+      <div class="qlist">
+        <div class="q">
+          <div class="q-stats"><span><b>0</b> votes</span><span>0 answers</span><span>10 views</span></div>
+          <div class="q-body">
+            <h3><a href="#">Why does createAsofJoinEngine produce fewer matches when delayedTime is omitted?</a></h3>
+            <p>I’m using createAsofJoinEngine to perform an as-of join on two streaming tables. When I omit delayedTime, the results differ significantly from what I expect. Setting delayedTime gives me the expected ...</p>
+            <div class="q-meta">
+              <div class="tags"><a href="#">time-series</a><a href="#">streaming</a><a href="#">dolphindb</a></div>
+              <div class="user"><span class="ava" style="background:#7b5cd6">E</span><a href="#">Ethan</a> <b>11</b> asked 18 mins ago</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="q-stats"><span><b>0</b> votes</span><span>0 answers</span><span>7 views</span></div>
+          <div class="q-body">
+            <h3><a href="#">Elementor Text Edit issue</a></h3>
+            <p>In Elementor, majorly we face an issue when we click on any textEdit to style it usually takes white space at the very bottom, to overcome that we have to go to visual to code and then we have to ...</p>
+            <div class="q-meta">
+              <div class="tags"><a href="#">wordpress</a><a href="#">elementor</a></div>
+              <div class="user"><span class="ava" style="background:#3b7ea1">S</span><a href="#">Shiv Singh Keer</a> <b>1</b> asked 19 mins ago</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="q-stats"><span><b>0</b> votes</span><span class="answered">1 answer</span><span>10 views</span></div>
+          <div class="q-body">
+            <h3><a href="#">How can I replace the spaces in the output of a bash command</a></h3>
+            <p>I want to display the output of a bash command seperated by commas instead of spaces. I couldn't see any special option to do that. How can I do this?</p>
+            <div class="q-meta">
+              <div class="tags"><a href="#">bash</a></div>
+              <div class="user"><span class="ava" style="background:#c93c9b">F</span><a href="#">Furkan Karaduman</a> <b>1</b> asked 24 mins ago</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="q-stats"><span><b>-1</b> votes</span><span>0 answers</span><span>19 views</span></div>
+          <div class="q-body">
+            <h3><a href="#">Best approach to handling missing levels in a multi-level LOB hierarchy for financial exposure reporting?</a></h3>
+            <p>I want to handle/ analyze lob levels in finance domain , basically create reporting base data , there are all in all 7 levels but some are terminating at 5th or 6th , so the total across all level for ...</p>
+            <div class="q-meta">
+              <div class="tags"><a href="#">analytics</a><a href="#">data-analysis</a><a href="#">finance</a><a href="#">lob</a></div>
+              <div class="user"><span class="ava" style="background:#5aa35a">S</span><a href="#">SQL_starter_learner</a> <b>13</b> asked 40 mins ago</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="q-stats"><span><b>1</b> vote</span><span class="answered">1 answer</span><span>95 views</span></div>
+          <div class="q-body">
+            <h3><a href="#">Is dereferencing a null pointer undefined behavior? [duplicate]</a></h3>
+            <p>"Everyone knows" that dereferencing a null pointer is undefined behavior in C++. However, I couldn't find any clause in the standard that says so. Where and how is it specified?</p>
+            <div class="q-meta">
+              <div class="tags"><a href="#">c++</a><a href="#">language-lawyer</a><a href="#">c++23</a></div>
+              <div class="user"><span class="ava" style="background:#d0763a">S</span><a href="#">Stack Exchange Broke The Law</a> <b>59.3k</b> asked 2 hours ago</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="q-stats"><span><b>-4</b> votes</span><span>0 answers</span><span>98 views</span></div>
+          <div class="q-body">
+            <h3><a href="#">I would like to know how to tween a float from 0 to 1</a></h3>
+            <p>Here is my problem. How do I tween from zero to one? I am trying to go from 0 to 1 smoothly. I have tried everything including reading the docs.</p>
+            <div class="q-meta">
+              <div class="tags"><a href="#">godot</a></div>
+              <div class="user"><span class="ava" style="background:#444">D</span><a href="#">darkfenix</a> <b>27</b> asked 3 hours ago</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="q-stats"><span><b>-1</b> votes</span><span>0 answers</span><span>41 views</span></div>
+          <div class="q-body">
+            <h3><a href="#">VS 2026 C# WinForms - Trying to save forms return the error popup: "Value cannot be null. Parameter name: value."</a></h3>
+            <p>Almost all of the other posts related to the "Value cannot be null" error are for specific coding problems - this one is different. I have an existing VS Solution that has been working for a ...</p>
+            <div class="q-meta">
+              <div class="tags"><a href="#">c#</a><a href="#">winforms</a><a href="#">visual-studio-2026</a></div>
+              <div class="user"><span class="ava" style="background:#2a8f8f">R</span><a href="#">Richard B. Sorensen</a> <b>107</b> asked 4 hours ago</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="q-stats"><span><b>0</b> votes</span><span>0 answers</span><span>43 views</span></div>
+          <div class="q-body">
+            <h3><a href="#">iOS 26: bars don't follow vertical ScrollViews inside a horizontal paging ScrollView (hairline at rest, no soft edge)</a></h3>
+            <p>I have a screen that pages horizontally between questions. Each page has its own vertical ScrollView. On iOS 26 the navigation bar and bottom toolbar don't behave as they do for a plain ScrollView: ...</p>
+            <div class="q-meta">
+              <div class="tags"><a href="#">swiftui</a><a href="#">uiscrollview</a><a href="#">swiftui-scrollview</a><a href="#">liquid-glass</a></div>
+              <div class="user"><span class="ava" style="background:#4a6fd1">A</span><a href="#">Andriy Gordiychuk</a> <b>6,432</b> asked 4 hours ago</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="q-stats"><span><b>0</b> votes</span><span>0 answers</span><span>82 views</span></div>
+          <div class="q-body">
+            <h3><a href="#">Monaco failing to load web worker from CDN</a></h3>
+            <p>I'm trying to get monaco-editor to work from a CDN. I've done it before, but not encountered this issue. I get these errors: Uncaught Error: Uncaught TypeError: Failed to fetch dynamically imported ...</p>
+            <div class="q-meta">
+              <div class="tags"><a href="#">javascript</a><a href="#">cdn</a><a href="#">web-worker</a><a href="#">monaco-editor</a><a href="#">dynamic-import</a></div>
+              <div class="user"><span class="ava" style="background:#b8a12a">T</span><a href="#">Twineee The JavaScript Wizard</a> <b>357</b> asked 5 hours ago</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="q-stats"><span><b>-2</b> votes</span><span>0 answers</span><span>41 views</span></div>
+          <div class="q-body">
+            <h3><a href="#">Copilot Studio shows “No connections available” although connections are created and visible in Power Apps</a></h3>
+            <p>I’m trying to add the Azure DevOps MCP connector as a tool to an agent in Microsoft Copilot Studio. When I create a connection from Copilot Studio, the connection is saved and appears as Connected in ...</p>
+            <div class="q-meta">
+              <div class="tags"><a href="#">powerapps</a><a href="#">microsoft-copilot-studio</a></div>
+              <div class="user"><span class="ava" style="background:#a34a4a">L</span><a href="#">Luis Roberto Franco</a> <b>1</b> asked 5 hours ago</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="q-stats"><span><b>-1</b> votes</span><span>0 answers</span><span>79 views</span></div>
+          <div class="q-body">
+            <h3><a href="#">Getting Combination Permutations of Several Lists, With Segments of Length N</a></h3>
+            <p>My professor is having us do something similar to traveling salesman problem for hamiltonian paths using a genetic algorithm. It's likened to like two trucks doing deliveries from a depot: truck 1 ...</p>
+            <div class="q-meta">
+              <div class="tags"><a href="#">python</a><a href="#">list</a><a href="#">permutation</a></div>
+              <div class="user"><span class="ava" style="background:#d14a8b">V</span><a href="#">VivianHeart</a> <b>9</b> asked 5 hours ago</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="q-stats"><span><b>2</b> votes</span><span class="answered">1 answer</span><span>115 views</span></div>
+          <div class="q-body">
+            <h3><a href="#">std::exception_ptr and catching and re-throwing exceptions</a></h3>
+            <p>I want to write a bit of code that catches all exceptions thrown from a third-party function, takes a look at the exception message, and re-throws the exception later. I have written it like this: std:...</p>
+            <div class="q-meta">
+              <div class="tags"><a href="#">c++</a><a href="#">exception</a><a href="#">try-catch</a></div>
+              <div class="user"><span class="ava" style="background:#5a5ad1">S</span><a href="#">SU3</a> <b>5,539</b> asked 5 hours ago</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="q-stats"><span><b>-6</b> votes</span><span>0 answers</span><span>98 views</span></div>
+          <div class="q-body">
+            <h3><a href="#">Can I git commit and push in the Agents Window in VS Code?</a></h3>
+            <p>I can see the "changes" pane which allows me to review the changes the agent has made, if I'm happy with the changes how do I git commit and push? Do I need to go back to the regular VS Code ...</p>
+            <div class="q-meta">
+              <div class="tags"><a href="#">git</a><a href="#">vs-code</a></div>
+              <div class="user"><span class="ava" style="background:#3a9fd0">D</span><a href="#">Daniel Guenther</a> <b>39</b> asked 6 hours ago</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="q-stats"><span><b>-3</b> votes</span><span>0 answers</span><span>87 views</span></div>
+          <div class="q-body">
+            <h3><a href="#">QR code to fill username and password fields for RFgen</a></h3>
+            <p>I'm trying to create a QR code that reads the users input (username and password) and then filled the username and password fields before submitting the data. This is to allow our users to scan a QR ...</p>
+            <div class="q-meta">
+              <div class="tags"><a href="#">python</a><a href="#">qr-code</a></div>
+              <div class="user"><span class="ava" style="background:#7a9a3a">M</span><a href="#">mnickey</a> <b>791</b> asked 6 hours ago</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="q">
+          <div class="q-stats"><span><b>-2</b> votes</span><span>0 answers</span><span>24 views</span></div>
+          <div class="q-body">
+            <h3><a href="#">How to make new key-value pairs in a list of dictionaries using a list of values? [duplicate]</a></h3>
+            <p>I have a list of dictionaries: d = [{'item': ' laptop ', 'category': 'electronics'}, {'item': 'DESK CHAIR', 'category': 'Furniture'}] I also have a list of values: test = [15, 8] This is what I am ...</p>
+            <div class="q-meta">
+              <div class="tags"><a href="#">python</a><a href="#">list</a><a href="#">dictionary</a><a href="#">list-comprehension</a><a href="#">dictionary-comprehension</a></div>
+              <div class="user"><span class="ava" style="background:#888">U</span><a href="#">user33323056</a> <b>1</b> asked 6 hours ago</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pager">
+        <div class="pages">
+          <a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a>
+          <span>…</span><a href="#">1608995</a><a href="#">Next</a>
+        </div>
+        <div class="pages">
+          <a href="#" class="on">15</a><a href="#">30</a><a href="#">50</a><span>per page</span>
+        </div>
+      </div>
+    </main>
+
+    <!-- ================= RIGHT SIDEBAR ================= -->
+    <aside class="rightbar">
+      <div class="card card-agents">
+        <h3>Try Stack Overflow for Agents</h3>
+        <p class="strong">Verified knowledge for the agentic era</p>
+        <p><i>Paste this into your AI coding assistant:</i></p>
+        <pre>Help me join Stack Overflow for Agents here. Read https://agents.stackoverflow.com/skill.md, then start onboarding.</pre>
+        <p>Supports Claude Code, Cursor, Codex, Windsurf and more.</p>
+        <a href="agents.html" class="strong-link">Explore Stack Overflow for Agents</a>
+      </div>
+
+      <div class="card card-yellow">
+        <h4>The Overflow Blog</h4>
+        <ul>
+          <li>&#9998; <a href="articles.html">The pioneering coding tricks that built Doom and Quake</a></li>
+          <li>&#9998; <a href="articles.html">Agentic search doesn't find pages, it assembles answers</a></li>
+        </ul>
+        <h4>Featured on Meta</h4>
+        <ul>
+          <li>&#9632; <a href="#">You're doing it wrong: A plea for sanity in close voting</a></li>
+          <li>&#9632; <a href="#">Policy: Generative AI (e.g., ChatGPT) is banned</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-head"><h4>Collectives</h4><a href="#">see all</a></div>
+        <div class="collective">
+          <div class="col-top"><span class="col-logo" style="background:#232f3e">aws</span><div><b>AWS</b><small>40k Members</small></div><a href="#" class="btn btn-outline btn-sm">Join</a></div>
+          <p>A collective for developers who utilize Amazon Web Services' infrastructure and platform capabilities. The AWS Collective is organized and managed by the Stack Overflow community as a resource for developers.</p>
+        </div>
+        <div class="collective">
+          <div class="col-top"><span class="col-logo" style="background:#8a6d3b">MD</span><div><b>Mobile Development</b><small>31k Members</small></div><a href="#" class="btn btn-outline btn-sm">Join</a></div>
+          <p>A collective for developers who want to share their knowledge and learn more about mobile development practices and platforms</p>
+        </div>
+        <div class="collective">
+          <div class="col-top"><span class="col-logo" style="background:#111">AI</span><div><b>OpenAI</b><small>4k Members</small></div><a href="#" class="btn btn-outline btn-sm">Join</a></div>
+          <p>A collective for developers utilizing OpenAI's foundational models and APIs to build, integrate, and innovate. The OpenAI Collective is organized and managed by the Stack Overflow community as a resource for developers.</p>
+        </div>
+      </div>
+
+      <div class="hot">
+        <h4>Hot Network Questions</h4>
+        <ul>
+          <li><a href="#">Is there an explanation other than a triune nature of God which accounts for how John greets the churches in Asia?</a></li>
+          <li><a href="#">Do These Sky Mongol Arrows Meant for High Winds Work?</a></li>
+          <li><a href="#">Could this unusual structure found near the Narmada River in Madhya Pradesh, India, be a fossilized jaw of a prehistoric mammal?</a></li>
+          <li><a href="#">lualatex fails to read the math table parameter for roots</a></li>
+          <li><a href="#">Detecting heterogeneity in a stochastic process?</a></li>
+          <li><a href="#">How to have a `\cup` symbol different from the other symbols?</a></li>
+          <li><a href="#">Can a username violate a trademark in certain cases?</a></li>
+          <li><a href="#">Calculating the dual of any polyhedron</a></li>
+          <li><a href="#">Strange battery failure</a></li>
+          <li><a href="#">How to reduce line spacing inside a mathematical proof?</a></li>
+          <li><a href="#">XeTeX Color Stack Overflow Bug?</a></li>
+          <li><a href="#">Post apocalyptic book where the protagonist is searching for a safe (blue) city</a></li>
+        </ul>
+        <a href="#" class="more">more hot questions</a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <svg class="footer-logo" width="32" height="37" viewBox="0 0 32 37" aria-hidden="true">
+        <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#bcbbbb"/>
+        <path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#bcbbbb"/>
+      </svg>
+      <div class="footer-cols">
+        <div>
+          <h5>Stack Overflow</h5>
+          <a href="questions.html">Questions</a><a href="#">Help</a><a href="chat.html">Chat</a>
+        </div>
+        <div>
+          <h5>Business</h5>
+          <a href="product_si.html">Stack Internal</a><a href="product_sdl.html">Stack Data Licensing</a><a href="product_ads.html">Stack Ads</a>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <a href="About.html">About</a><a href="#">Press</a><a href="#">Work Here</a><a href="#">Legal</a><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Contact Us</a><a href="#">Cookie Settings</a><a href="#">Cookie Policy</a>
+        </div>
+        <div>
+          <h5>Stack Overflow’s open communities</h5>
+          <a href="#">Technology</a><a href="#">Culture &amp; recreation</a><a href="#">Life &amp; arts</a><a href="#">Science</a><a href="#">Professional</a><a href="#">Business</a>
+          <a href="product_sdl.html#api" class="gap">API</a><a href="product_sdl.html">Data</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social"><a href="articles.html">Blog</a><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">LinkedIn</a><a href="#">Instagram</a></div>
+        <p>Site design / logo © 2026 Stack Exchange Inc; user contributions licensed under <a href="#">CC BY-SA</a> . rev 2026.11.17.47731</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= HOMEPAGE SETUP POPUP ================= -->
+  <dialog class="home-setup" id="homeSetup" aria-labelledby="hsTitle">
+    <form method="dialog" class="hs-close-form"><button class="hs-close" aria-label="Close">&#10005;</button></form>
+    <h2 id="hsTitle">Let's set up your homepage</h2>
+    <p>Select a few topics you're interested in:</p>
+    <div class="hs-chips" id="hsChips"><button type="button" class="hs-chip" aria-pressed="false">python</button><button type="button" class="hs-chip" aria-pressed="false">javascript</button><button type="button" class="hs-chip" aria-pressed="false">c#</button><button type="button" class="hs-chip" aria-pressed="false">reactjs</button><button type="button" class="hs-chip" aria-pressed="false">java</button><button type="button" class="hs-chip" aria-pressed="false">android</button><button type="button" class="hs-chip" aria-pressed="false">html</button><button type="button" class="hs-chip" aria-pressed="false">flutter</button><button type="button" class="hs-chip" aria-pressed="false">c++</button><button type="button" class="hs-chip" aria-pressed="false">node.js</button><button type="button" class="hs-chip" aria-pressed="false">typescript</button><button type="button" class="hs-chip" aria-pressed="false">css</button><button type="button" class="hs-chip" aria-pressed="false">r</button><button type="button" class="hs-chip" aria-pressed="false">php</button><button type="button" class="hs-chip" aria-pressed="false">angular</button><button type="button" class="hs-chip" aria-pressed="false">next.js</button><button type="button" class="hs-chip" aria-pressed="false">spring-boot</button><button type="button" class="hs-chip" aria-pressed="false">machine-learning</button><button type="button" class="hs-chip" aria-pressed="false">sql</button><button type="button" class="hs-chip" aria-pressed="false">excel</button><button type="button" class="hs-chip" aria-pressed="false">ios</button><button type="button" class="hs-chip" aria-pressed="false">azure</button><button type="button" class="hs-chip" aria-pressed="false">docker</button></div>
+    <label for="hsSearch" class="hs-label">Or search from our full list:</label>
+    <label class="search hs-search">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M15.5 15.5 21 21"/></svg>
+      <input type="search" id="hsSearch" placeholder="Search">
+    </label>
+    <button type="button" class="btn btn-blue hs-next" id="hsNext" disabled onclick="location.href='Login.html'">Next</button>
+    <p class="hs-note">You'll be prompted to create an account to view your personalized homepage.</p>
+  </dialog>
+
+  <script>
+    const setup = document.getElementById('homeSetup');
+    const next = document.getElementById('hsNext');
+    const chipEls = [...document.querySelectorAll('.hs-chip')];
+    chipEls.forEach(c => c.addEventListener('click', () => {
+      c.setAttribute('aria-pressed', c.getAttribute('aria-pressed') === 'false');
+      next.disabled = !document.querySelector('.hs-chip[aria-pressed="true"]');
+    }));
+    document.getElementById('hsSearch').addEventListener('input', e => {
+      const q = e.target.value.trim().toLowerCase();
+      chipEls.forEach(c => c.hidden = !c.textContent.includes(q));
+    });
+    setup.addEventListener('click', e => { if (e.target === setup) setup.close(); }); // click backdrop to close
+    setup.showModal();
+  </script>
+  <script>
+    // Products dropdown: close when clicking elsewhere or pressing Esc
+    const productsMenu = document.querySelector('details.products');
+    document.addEventListener('click', e => { if (!productsMenu.contains(e.target)) productsMenu.open = false; });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') productsMenu.open = false; });
+  </script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tags - Stack Overflow</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <a href="#content" class="skip">Skip to main content</a>
+
+  <!-- ================= TOP BAR ================= -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="index.html" class="logo">
+        <svg width="22" height="26" viewBox="0 0 32 37" aria-hidden="true">
+          <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#bcbbbb"/>
+          <path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#f48024"/>
+        </svg>
+        stack<b>overflow</b>
+      </a>
+      <nav class="topnav">
+        <a href="About.html">About</a>
+        <details class="products">
+          <summary>Products</summary>
+          <div class="products-menu">
+            <a href="product_si.html"><b>Stack Internal</b><span>Implement a knowledge platform layer to power your enterprise and AI tools.</span></a>
+            <a href="product_sdl.html"><b>Stack Data Licensing</b><span>Get access to top-class technical expertise with trusted &amp; attributed content.</span></a>
+            <a href="product_ads.html"><b>Stack Ads</b><span>Connect your brand to the world’s most trusted technologist communities.</span></a>
+            <a href="#" class="pm-sep"><b>Releases</b><span>Keep up-to-date on features we add to Stack Overflow and Stack Internal.</span></a>
+            <a href="About.html" class="pm-sep pm-plain">About the company</a>
+            <a href="articles.html" class="pm-plain">Visit the blog</a>
+          </div>
+        </details>
+        <a href="product_si.html">Stack Internal</a>
+      </nav>
+      <label class="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M15.5 15.5 21 21"/></svg>
+        <input type="search" placeholder="Search…" aria-label="Search" title="Search supports filters by tag, author, exact phrase, answer count, score, or accepted status.">
+      </label>
+      <a href="#" class="icon-btn" aria-label="Help">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><text x="12" y="17" text-anchor="middle" font-size="14" font-weight="700" fill="#fff" font-family="Arial">?</text></svg>
+      </a>
+      <a href="#" class="icon-btn" aria-label="Site switcher">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="2" y="3" width="20" height="4" rx="1.5"/><rect x="2" y="9" width="20" height="4" rx="1.5"/><path d="M2 15h20v3a1.5 1.5 0 0 1-1.5 1.5H14l-3 2.5v-2.5H3.5A1.5 1.5 0 0 1 2 18z"/></svg>
+      </a>
+      <a href="Login.html" class="btn btn-outline">Log in</a>
+      <a href="Login.html" class="btn btn-blue">Sign up</a>
+    </div>
+  </header>
+
+  <div class="layout">
+
+    <!-- ================= LEFT SIDEBAR ================= -->
+    <aside class="leftbar">
+      <nav class="sidenav">
+        <a href="index.html">&#8962; Home</a>
+        <a href="questions.html">&#9783; Questions</a>
+        <a href="ai-assist.html">&#10022; AI Assist</a>
+        <a href="tags.html" class="active">&#9873; Tags</a>
+        <a href="agents.html" class="gap">{ } Stack Overflow for Agents</a>
+        <a href="challenges.html" class="gap">&#9650; Challenges</a>
+        <a href="chat.html">&#9776; Chat</a>
+        <a href="articles.html">&#9636; Articles</a>
+        <a href="users.html">&#9786; Users</a>
+        <a href="#" class="gap">&#9638; Companies</a>
+        <a href="#">&#9636; Developer Story</a>
+      </nav>
+
+      <div class="side-block">
+        <h4>Collectives <span class="plus">+</span></h4>
+        <p>Communities for your favorite technologies. <a href="#">Explore all Collectives</a></p>
+      </div>
+
+      <div class="side-block">
+        <h4>Stack Internal</h4>
+        <div class="si-art" aria-hidden="true">
+          <span class="c-orange">&#10005;</span><span class="c-yellow">&#9888;</span>
+          <span class="c-green">&#10003;</span><span class="c-purple">{ }</span>
+          <span class="si-verify">verify |</span>
+        </div>
+        <p>Turn scattered docs and code into trusted AI context. Explore the new Stack Internal platform.</p>
+        <a href="product_si.html" class="btn btn-blue btn-block">Create a workspace</a>
+      </div>
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+    <main id="content" class="main">
+      <h1 class="page-title">Tags</h1>
+      <p class="tags-intro">A tag is a keyword or label that categorizes your question with other, similar questions. Using the right tags makes it easier for others to find and answer your question.</p>
+      <div class="tags-syn">
+        <a href="#" class="tag-pill">opinion-based-tag</a><a href="#" class="tag-pill">tag</a>
+        <a href="#">Show all tag synonyms</a>
+      </div>
+
+      <div class="tags-bar">
+        <label class="search tags-filter">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M15.5 15.5 21 21"/></svg>
+          <input type="text" id="tagFilter" placeholder="Filter by tag name" aria-label="Filter by tag name">
+        </label>
+        <div class="tabs" id="tagSort">
+          <a href="#" data-sort="popular" class="on">Popular</a>
+          <a href="#" data-sort="name">Name</a>
+          <a href="#" data-sort="new">New</a>
+        </div>
+      </div>
+
+      <div class="tag-grid" id="tagGrid"></div>
+
+      <div class="pager">
+        <div class="pages">
+          <a href="#" class="on">1</a><a href="#">2</a><a href="#">3</a><a href="#">4</a><a href="#">5</a>
+          <span>…</span><a href="#">1950</a><a href="#">Next</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <svg class="footer-logo" width="32" height="37" viewBox="0 0 32 37" aria-hidden="true">
+        <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#bcbbbb"/>
+        <path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#bcbbbb"/>
+      </svg>
+      <div class="footer-cols">
+        <div>
+          <h5>Stack Overflow</h5>
+          <a href="questions.html">Questions</a><a href="#">Help</a><a href="chat.html">Chat</a>
+        </div>
+        <div>
+          <h5>Business</h5>
+          <a href="product_si.html">Stack Internal</a><a href="product_sdl.html">Stack Data Licensing</a><a href="product_ads.html">Stack Ads</a>
+        </div>
+        <div>
+          <h5>Company</h5>
+          <a href="About.html">About</a><a href="#">Press</a><a href="#">Work Here</a><a href="#">Legal</a><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Contact Us</a><a href="#">Cookie Settings</a><a href="#">Cookie Policy</a>
+        </div>
+        <div>
+          <h5>Stack Overflow’s open communities</h5>
+          <a href="#">Technology</a><a href="#">Culture &amp; recreation</a><a href="#">Life &amp; arts</a><a href="#">Science</a><a href="#">Professional</a><a href="#">Business</a>
+          <a href="product_sdl.html#api" class="gap">API</a><a href="product_sdl.html">Data</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="social"><a href="articles.html">Blog</a><a href="#">Facebook</a><a href="#">Twitter</a><a href="#">LinkedIn</a><a href="#">Instagram</a></div>
+        <p>Site design / logo © 2026 Stack Exchange Inc; user contributions licensed under <a href="#">CC BY-SA</a> . rev 2026.11.17.47731</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const TAGS = [["javascript", "For questions about programming in ECMAScript (JavaScript/JS) and its different dialects/implementations (except for ActionScript). Note that JavaScript is NOT Java. Include all tags that are relevant…", 2521470, "19 asked this week, 81 this month"], ["python", "Python is a dynamically typed, multi-purpose programming language designed to be quick to learn, understand, and use, with a clean and uniform syntax. Note that Python 2 reached end-of-life on January…", 2204332, "11 asked today, 43 this week"], ["java", "Java is a high-level object-oriented programming language. Use this tag when you're having problems using or understanding the language itself. This tag is frequently used alongside other tags for lib…", 1914179, "5 asked today, 24 this week"], ["c#", "C# (pronounced \"see sharp\") is a high-level, statically typed, multi-paradigm programming language developed by Microsoft. C# code usually targets Microsoft's .NET ecosystem, which include .NET, .NET …", 1621640, "14 asked this week, 53 this month"], ["php", "PHP is an open-source, multi-paradigm, dynamically-typed, and interpreted scripting language designed initially for server-side web development. Use this tag for questions about programming in the PHP…", 1460691, "5 asked this week, 34 this month"], ["android", "Android is Google's mobile operating system, used for programming or developing digital devices (Smartphones, Tablets, Automobiles, TVs, Wear, Glass, IoT). For topics related to Android, use Android-s…", 1413683, "33 asked this month, 1461 this year"], ["html", "HTML (HyperText Markup Language) is the markup language for creating web pages and other information to be displayed in a web browser. Questions regarding HTML should include a minimal reproducible ex…", 1185019, "11 asked this week, 60 this month"], ["jquery", "jQuery is a JavaScript library. jQuery is a popular cross-browser JavaScript library that facilitates Document Object Model (DOM) traversal, event handling, animations, and AJAX interactions by mi…", 1029858, "7 asked this month, 116 this year"], ["c++", "C++ is a general-purpose programming language. Use this tag for questions about/utilizing C++. Do not also tag questions with [c] unless you have a good reason. C and C++ are different languages. Use …", 814009, "13 asked this week, 90 this month"], ["css", "CSS (Cascading Style Sheets) is a representation style sheet language used for describing the look and formatting of HTML (HyperText Markup Language), XML (Extensible Markup Language) documents and SV…", 805580, "10 asked this week, 63 this month"], ["ios", "iOS is the mobile operating system running on the Apple iPhone, iPod touch, and iPad. Use this tag [ios] for questions related to programming on the iOS platform. Use the related tags [objective-c] an…", 687707, "14 asked this month, 844 this year"], ["sql", "Structured Query Language (SQL) is a language for querying databases. Questions should include code examples, table structure, sample data, and a tag for the DBMS implementation (e.g. MySQL, PostgreSQ…", 673428, "20 asked this month, 581 this year"], ["mysql", "MySQL is a free, open-source Relational Database Management System (RDBMS) that uses Structured Query Language (SQL). DO NOT USE this tag for other DBs such as SQL Server, SQLite etc. Those are diff…", 656949, "10 asked this month, 273 this year"], ["r", "R is a free, open-source programming language & software environment for statistical computing, bioinformatics, visualization & general computing. Please use minimal reproducible examples others can …", 510362, "8 asked this week, 50 this month"], ["reactjs", "React is a JavaScript library for building user interfaces. It uses a declarative, component-based paradigm and aims to be efficient and flexible.", 473724, "12 asked this month, 565 this year"], ["node.js", "for questions about Node.js, but not for general questions about Javascript. Check the official API documentation before asking, as your question might be trivial", 469541, "19 asked this month, 694 this year"], ["arrays", "An array is an ordered linear data structure consisting of a collection of elements (values, variables, or references), each identified by one or more indexes. When asking about specific variants of a…", 417246, "12 asked this month, 283 this year"], ["c", "C is a general-purpose programming language used for system programming (OS and embedded), libraries, games, and cross-platform development. Use this tag with general questions concerning the C langua…", 407995, "12 asked this week, 59 this month"], ["asp.net", "ASP.NET is a Microsoft web application development framework that allows programmers to build dynamic web sites, web applications and web services. It is useful to use this tag in conjunction with the…", 372794, "168 asked this year"], ["json", "JSON (JavaScript Object Notation) is a serializable data interchange format that is a machine and human readable. Do not use this tag for native JavaScript objects or JavaScript object literals. …", 360118, "7 asked this month, 249 this year"], ["python-3.x", "DO NOT USE UNLESS YOUR QUESTION IS FOR PYTHON 3 ONLY. Always use alongside the standard [python] tag.", 340516, "10 asked this month, 272 this year"], [".net", "Do NOT use for questions about .NET Core - use [.net-core] instead. The .NET framework is a software framework designed mainly for the Microsoft Windows operating system. It includes an implementation…", 340212, "11 asked this month, 469 this year"], ["ruby-on-rails", "Ruby on Rails is an open source full-stack web application framework written in Ruby. It follows the popular MVC framework model and is known for its \"convention over configuration\" approach to applic…", 337896, "76 asked this year"], ["sql-server", "Microsoft SQL Server is a relational database management system (RDBMS). Use this tag for all Microsoft SQL Server editions including Compact, Express, Azure, Fast-track, APS (formerly PDW) and Azure …", 336206, "5 asked this week, 19 this month"], ["swift", "Swift is a general-purpose programming language developed by Apple Inc first released in 2014 for its platforms and Linux. Swift is open-source. Use the tag only for questions about language features …", 336091, "13 asked this month, 589 this year"], ["django", "Django is an open-source server-side web application framework written in Python. It is designed to reduce the effort required to create complex data-driven websites and web applications, focusing on …", 311132, "8 asked this month, 240 this year"], ["angular", "Questions about Angular (not to be confused with AngularJS), the web framework from Google. Use this tag for Angular questions which are not specific to an individual version. For the older AngularJS …", 306368, "5 asked this month, 449 this year"], ["objective-c", "should be used only on questions that are about Objective-C features or depend on code in the language. The tags [cocoa] and [cocoa-touch] should be used to ask about Apple's frameworks or cl…", 291667, "36 asked this year"], ["pandas", "Pandas is a Python library for data manipulation and analysis, e.g. dataframes, multidimensional time series and cross-sectional datasets commonly found in statistics, experimental science results, ec…", 288806, "256 asked this year"], ["excel", "Only for questions on programming against Excel objects or files, or formula development. You may combine the Excel tag with VBA, VSTO, C#, VB.NET, PowerShell, OLE automation, and other programming re…", 288610, "18 asked this month, 537 this year"], ["angularjs", "Use for questions about AngularJS (1.x), the open-source JavaScript framework. Do NOT use this tag for Angular 2 or later versions; instead, use the [angular] tag.", 261206, "12 asked this year"], ["regex", "Regular expressions provide a declarative language to match patterns within strings. They are commonly used for string validation, parsing, and transformation. Specify the language (PHP, Python, etc) …", 260947, "114 asked this year"], ["typescript", "TypeScript is a typed superset of JavaScript that transpiles to plain JavaScript. It adds optional types to JavaScript. This tag is for questions specific to TypeScript. It is not used for general Jav…", 234088, "15 asked this month, 558 this year"], ["ruby", "Ruby is a multi-platform open-source, dynamic object-oriented interpreted language. The [ruby] tag is for questions related to the Ruby language, including its syntax and its libraries. Ruby on Rails …", 229119, "65 asked this year"], ["linux", "NOTICE: All Linux questions must be related to programming; those that aren't will be closed. Use this tag only if your question relates to programming using Linux APIs or Linux-specific behavior, …", 226882, "5 asked this week, 22 this month"], ["ajax", "Ajax (asynchronous JavaScript and XML) is a technique for creating interactive website user interfaces without the traditional web page refresh or reload. It uses asynchronous data exchange between cl…", 220296, "27 asked this year"]];
+    const grid = document.getElementById('tagGrid');
+    const filter = document.getElementById('tagFilter');
+    const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+    let sort = 'popular';
+
+    function render() {
+      const q = filter.value.trim().toLowerCase();
+      let list = TAGS.filter(t => t[0].includes(q));
+      if (sort === 'name') list = [...list].sort((a, b) => a[0].localeCompare(b[0]));
+      if (sort === 'new') list = [...list].reverse(); // ponytail: no creation dates in the data, reversed order stands in
+      grid.innerHTML = list.map(([name, desc, count, recent]) => `
+        <div class="tag-card">
+          <a href="#" class="tag-pill">${esc(name)}</a>
+          <p>${esc(desc)}</p>
+          <div class="tag-stats"><span>${count} questions</span><span>${recent}</span></div>
+        </div>`).join('') || '<p class="tag-empty">No tags match “' + esc(q) + '”.</p>';
+    }
+
+    filter.addEventListener('input', render);
+    document.querySelectorAll('#tagSort a').forEach(a => a.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelector('#tagSort .on').classList.remove('on');
+      a.classList.add('on');
+      sort = a.dataset.sort;
+      render();
+    }));
+    render();
+  </script>
+  <script>
+    // Products dropdown: close when clicking elsewhere or pressing Esc
+    const productsMenu = document.querySelector('details.products');
+    document.addEventListener('click', e => { if (!productsMenu.contains(e.target)) productsMenu.open = false; });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') productsMenu.open = false; });
+  </script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Assist - Stack Overflow</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <a href="#content" class="skip">Skip to main content</a>
+
+  <!-- ================= TOP BAR (same as index.html) ================= -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="index.html" class="logo">
+        <svg width="22" height="26" viewBox="0 0 32 37" aria-hidden="true">
+          <path d="M26 33v-9h4v13H0V24h4v9h22Z" fill="#bcbbbb"/>
+          <path d="m21.5 0-2.7 2 9.9 13.3 2.7-2L21.5 0ZM26 18.4 13.3 7.8l2.1-2.5 12.7 10.6-2.1 2.5ZM9.1 15.2l15 7 1.4-3-15-7-1.4 3Zm14 10.79.68-2.95-16.1-3.35L7 23l16.1 2.99ZM23 30H7v-3h16v3Z" fill="#f48024"/>
+        </svg>
+        stack<b>overflow</b>
+      </a>
+      <nav class="topnav">
+        <a href="About.html">About</a>
+        <details class="products">
+          <summary>Products</summary>
+          <div class="products-menu">
+            <a href="product_si.html"><b>Stack Internal</b><span>Implement a knowledge platform layer to power your enterprise and AI tools.</span></a>
+            <a href="product_sdl.html"><b>Stack Data Licensing</b><span>Get access to top-class technical expertise with trusted &amp; attributed content.</span></a>
+            <a href="product_ads.html"><b>Stack Ads</b><span>Connect your brand to the world’s most trusted technologist communities.</span></a>
+            <a href="#" class="pm-sep"><b>Releases</b><span>Keep up-to-date on features we add to Stack Overflow and Stack Internal.</span></a>
+            <a href="About.html" class="pm-sep pm-plain">About the company</a>
+            <a href="articles.html" class="pm-plain">Visit the blog</a>
+          </div>
+        </details>
+        <a href="product_si.html">Stack Internal</a>
+      </nav>
+      <label class="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="10" cy="10" r="7"/><path d="M15.5 15.5 21 21"/></svg>
+        <input type="search" placeholder="Search…" aria-label="Search" title="Search supports filters by tag, author, exact phrase, answer count, score, or accepted status.">
+      </label>
+      <a href="#" class="icon-btn" aria-label="Help">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><text x="12" y="17" text-anchor="middle" font-size="14" font-weight="700" fill="#fff" font-family="Arial">?</text></svg>
+      </a>
+      <a href="#" class="icon-btn" aria-label="Site switcher">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="2" y="3" width="20" height="4" rx="1.5"/><rect x="2" y="9" width="20" height="4" rx="1.5"/><path d="M2 15h20v3a1.5 1.5 0 0 1-1.5 1.5H14l-3 2.5v-2.5H3.5A1.5 1.5 0 0 1 2 18z"/></svg>
+      </a>
+      <a href="Login.html" class="btn btn-outline">Log in</a>
+      <a href="Login.html" class="btn btn-blue">Sign up</a>
+    </div>
+  </header>
+
+  <div class="layout ai-layout">
+
+    <!-- ================= LEFT SIDEBAR ================= -->
+    <aside class="leftbar ai-left">
+      <nav class="sidenav">
+        <a href="index.html" class="ai-back">&#8249;&nbsp; Back</a>
+        <a href="ai-assist.html" class="ai-current">&#9998; New chat</a>
+        <a href="#">&#9672; MCP Server <span class="info" title="Connect AI Assist to your tools">i</span></a>
+        <a href="#">&#9646;&#9646;&#9646; ProLLM.ai <span class="info" title="LLM benchmarks">i</span></a>
+      </nav>
+
+      <div class="side-block">
+        <p class="ai-muted">Recent Chats</p>
+        <p class="ai-login"><a href="Login.html">Log in</a> or <a href="Login.html">sign up</a> to save and return to your chats.</p>
+      </div>
+
+      <div class="side-block ai-about">
+        <h3>About AI Assist</h3>
+        <p><a href="#">Learn more</a> about how it works and what's new.</p>
+      </div>
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+    <main id="content" class="main">
+      <h1 class="ai-title">&#9641; AI Assist</h1>
+
+      <div class="ai-center">
+        <h2>What do you want to learn today?</h2>
+        <form class="ai-box" onsubmit="return false">
+          <textarea placeholder="Ask me anything..." aria-label="Ask me anything"></textarea>
+          <button type="submit" class="ai-send" aria-label="Send">&#8593;</button>
+        </form>
+        <p class="ai-terms">
+          By using AI Assist, you agree to Stack Overflow’s <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+          Powered with the help of OpenAI. For help or feedback, <a href="#">contact us</a> and reference this conversation ID:
+          e6a830a4-877d-447d-ab57-d477673242e2
+        </p>
+      </div>
+    </main>
+
+    <!-- ================= RIGHT SIDEBAR ================= -->
+    <aside class="rightbar">
+      <div class="card ai-help">&#9641; Need more help? <a href="index.html">Ask the community.</a></div>
+    </aside>
+  </div>
+  <script>
+    // Products dropdown: close when clicking elsewhere or pressing Esc
+    const productsMenu = document.querySelector('details.products');
+    document.addEventListener('click', e => { if (!productsMenu.contains(e.target)) productsMenu.open = false; });
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') productsMenu.open = false; });
+  </script>
+</body>
+</html>
