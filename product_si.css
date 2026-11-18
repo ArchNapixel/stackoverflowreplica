@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #1b1b1b;
+  background: white;
+}
+
+a {
+  color: #1b1b1b;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 35px;
+}
+
+.header .left,
+.header .right,
+.subnav .left {
+  display: flex;
+  align-items: center;
+}
+
+.header a,
+.logo {
+  margin-right: 25px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.grey {
+  color: #999;
+}
+
+.button {
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.blue {
+  background: #4f8cff;
+  color: white;
+}
+
+.black {
+  background: #161616;
+  color: white;
+  margin-right: 0;
+}
+
+.grey-button {
+  background: #eeeeee;
+  display: inline-block;
+}
+
+.subnav {
+  display: flex;
+  justify-content: space-between;
+  background: #efedeb;
+  padding: 10px 20px;
+  margin: 0 12px;
+  font-size: 14px;
+}
+
+.subnav a {
+  margin-right: 25px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  padding: 70px 0;
+}
+
+.headline {
+  width: 450px;
+  margin-right: 130px;
+  font-size: 50px;
+}
+
+.line1 {
+  display: flex;
+}
+
+.check {
+  background: #5a8f1a;
+  color: white;
+  width: 64px;
+  height: 64px;
+  text-align: center;
+  line-height: 64px;
+}
+
+.light {
+  background: #eeeeee;
+  padding: 0 15px;
+  height: 64px;
+  line-height: 64px;
+}
+
+.line2 {
+  background: #161616;
+  color: white;
+  margin-left: 64px;
+  padding: 0 15px;
+  height: 64px;
+  line-height: 64px;
+}
+
+.description {
+  width: 500px;
+  font-size: 19px;
+}
+
+.description p {
+  margin-top: 0;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.showcase {
+  background: #6b1626;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.orange-bar {
+  background: #ff5f00;
+  height: 20px;
+  width: 1060px;
+  position: absolute;
+  top: 44px;
+  left: 423px;
+}
+
+.tiles {
+  position: absolute;
+  top: 64px;
+  left: 393px;
+}
+
+.row {
+  display: flex;
+}
+
+.tile {
+  width: 94px;
+  height: 90px;
+  text-align: center;
+  line-height: 90px;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+.x { 
+  background: #2f2a25; 
+}
+.q { 
+  background: #8a7a69; color: #2f2a25; 
+}
+.black {
+  background: #230006; 
+}
+.olive {
+  background: #332805;
+}
+.white {
+  background: #ebebeb;
+}
+
+.orange-block {
+  background: #ff5f00;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 380px;
+  height: 250px;
+}
+
+.purple-block {
+  background: #9a9aff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 150px;
+  height: 200px;
+}
