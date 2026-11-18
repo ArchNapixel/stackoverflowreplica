@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Log in</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <button class="icon-btn" aria-label="Menu">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <a href="#" class="brand brand-sm"><span class="mark" aria-hidden="true"></span>Your<b>Brand</b></a>
+      <nav class="nav">
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Internal</a>
+      </nav>
+      <label class="search">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10" cy="10" r="7"/><path d="M15.5 15.5L21 21"/></svg>
+        <input type="search" placeholder="Search...">
+      </label>
+      <button class="icon-btn" aria-label="Help">
+        <svg width="22" height="22" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><text x="12" y="17" text-anchor="middle" font-size="14" font-weight="700" fill="#fff" font-family="Arial">?</text></svg>
+      </button>
+      <button class="icon-btn" aria-label="Inbox">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="3" width="20" height="4" rx="1.5"/><rect x="2" y="9" width="20" height="4" rx="1.5"/><path d="M2 15h20v3a1.5 1.5 0 0 1-1.5 1.5H14l-3 2.5v-2.5H3.5A1.5 1.5 0 0 1 2 18z"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main class="page">
+    <a href="#" class="brand brand-lg"><span class="mark" aria-hidden="true"></span>Your<b>Brand</b></a>
+
+    <div class="social">
+      <button class="social-btn google" type="button">
+        <svg width="20" height="20" viewBox="0 0 24 24"><path fill="#4285F4" d="M22 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.6a4.8 4.8 0 0 1-2.1 3.1v2.6h3.4c2-1.8 3.1-4.5 3.1-7.5z"/><path fill="#34A853" d="M12 22c2.8 0 5.1-.9 6.9-2.5l-3.4-2.6c-.9.6-2.1 1-3.5 1-2.7 0-5-1.8-5.800-4.300H2.700v2.700A10 10 0 0 0 12 22z"/><path fill="#FBBC05" d="M6.200 13.600a6 6 0 0 1 0-3.800V7.100H2.700a10 10 0 0 0 0 9z"/><path fill="#EA4335" d="M12 6c1.500 0 2.900.5 4 1.600l3-3A10 10 0 0 0 2.700 7.100l3.500 2.700C7 7.800 9.300 6 12 6z"/></svg>
+        Log in with Google
+      </button>
+      <button class="social-btn github" type="button">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.640 22.410c.580.110.790-.250.790-.560v-2c-3.200.700-3.880-1.400-3.880-1.400-.520-1.340-1.280-1.700-1.280-1.700-1.040-.710.080-.700.080-.700 1.150.080 1.760 1.190 1.760 1.190 1.030 1.760 2.700 1.250 3.360.960.100-.750.400-1.250.730-1.540-2.560-.290-5.240-1.280-5.240-5.700 0-1.260.450-2.290 1.190-3.100-.120-.290-.520-1.470.110-3.060 0 0 .970-.310 3.170 1.180a11 11 0 0 1 5.780 0c2.200-1.490 3.160-1.180 3.160-1.180.640 1.590.240 2.770.120 3.060.740.810 1.180 1.840 1.180 3.100 0 4.430-2.690 5.400-5.260 5.680.410.360.780 1.060.780 2.140v3.170c0 .310.210.680.800.560A11.500 11.500 0 0 0 12 .5z"/></svg>
+        Log in with GitHub
+      </button>
+      <button class="social-btn facebook" type="button">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12a12 12 0 1 0-13.900 11.900v-8.400H7.100V12h3V9.400c0-3 1.800-4.700 4.500-4.700 1.300 0 2.700.2 2.700.2v3h-1.500c-1.500 0-2 .9-2 1.900V12h3.400l-.5 3.500h-2.900v8.400A12 12 0 0 0 24 12z"/></svg>
+        Log in with Facebook
+      </button>
+    </div>
+
+    <form class="card" action="#" method="post" onsubmit="return false">
+      <label for="email" class="label">Email</label>
+      <input id="email" class="field" type="email" autocomplete="email">
+
+      <div class="label-row">
+        <label for="password" class="label">Password</label>
+        <a href="#" class="link small">Forgot password?</a>
+      </div>
+      <div class="field-wrap">
+        <input id="password" class="field" type="password" autocomplete="current-password">
+        <button type="button" class="toggle" id="toggle" aria-label="Show password">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.600-7 10-7 10 7 10 7-3.600 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/><path d="M3 3l18 18"/></svg>
+        </button>
+      </div>
+
+      <button class="submit" type="submit">Log in</button>
+      <hr>
+    </form>
+
+    <p class="signup">Don’t have an account? <a href="#" class="link">Sign up</a></p>
+  </main>
+
+  <script>
+    const pw = document.getElementById('password');
+    document.getElementById('toggle').addEventListener('click', () => {
+      pw.type = pw.type === 'password' ? 'text' : 'password';
+    });
+  </script>
+</body>
+</html>
